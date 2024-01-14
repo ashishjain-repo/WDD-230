@@ -2,12 +2,54 @@
     padding: 0;
     margin: 0;
 }
+body{
+    display: grid;
+    grid-template-columns: 1fr 640px 1fr;
+    grid-template-rows: 200px 1fr 1fr;
+    background-color:beige;
+}
 /* Header */
+header{
+grid-row: 1/2;
+grid-column: 2/3;
+background-color: black;
+}
+.myname{
+    display: grid;
+    grid-template-columns:40% 60%;
+    grid-template-rows: 1fr;
+    background-color: black;
+    align-items: center;
+    justify-items: center;
+
+}
+.profile-image{
+    width: 160px;
+    height: 160px;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.myname-title{
+grid-row: 1/2;
+grid-column: 2/3;
+text-align: center;
+color: white;
+
+}
+nav{background-color: white;}
 /* Header */
 
 /* Main */
+main{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
 /* Main */
 
 /* Footer */
+footer{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
 /* Footer */
 
