@@ -154,6 +154,12 @@ footer{
 footer{
     text-align: center;
     margin-top: 1rem;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 3em;
+    display: grid;
+    align-content:center;
+    color: darkred;
+    font-weight: 800;
+    background-color: white;
+    border-radius: 5px;
 }
