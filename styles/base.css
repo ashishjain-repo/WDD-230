@@ -76,9 +76,7 @@ main{
 .main-heading{
     text-align: center;
 }
-.activities{
-    /* border: 1px solid black; */
-}
+/* .activities{border: 1px solid black;} */
 .activities-title{
     /* border: 1px solid black; */
     text-align: center;
@@ -114,7 +112,7 @@ main{
 .activities-detail-list li a{
     color: darkred;
 }
-.information{}
+/* .information{} */
 .information-title{text-align: center;
     display: grid;
     height: 4rem;
