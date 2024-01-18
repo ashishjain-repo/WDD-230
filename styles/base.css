@@ -25,7 +25,7 @@ margin-top: 1rem;
     background-color: black;
     align-items: center;
     justify-items: center;
-    grid-row-end: 1/2;
+    grid-row: 1/2;
     border-radius: 5px;
     height: 180px;
 
