@@ -1,0 +1,10 @@
+@media screen and (max-width: 600px) {
+    body{
+        background-color: green;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: 1fr 1fr 1fr;
+    }
+}
