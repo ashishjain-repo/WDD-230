@@ -47,7 +47,7 @@ main{
 .section-1,.section-2,.section-3{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3em 2em 2em 1fr .5fr;
+    grid-template-rows: 3em 2em 3em 1fr .5fr;
     justify-items: center;
     border: 1px solid black;
     border-radius: 15px;
@@ -73,6 +73,33 @@ main{
     font-size: 22px;
     letter-spacing: .1em;
 }
+.style-link{
+    display: inline-block;
+    width: 100%;
+    padding-left: 1em;
+    padding-top: .5em;
+    font-size: 22px;
+}
 section > img{
     width: 25vw;
+}
+.style-para{
+    display: inline-block;
+    width: 100%;
+    padding: 1em 3em;
+    font-size: 20px;
+    line-height: 2em;
+}
+
+footer{
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    letter-spacing: .1em;
+    word-spacing: .1em;
+    margin-top: 2em;
+    height: 5vh;
+    padding-top: .5em;
+    color: var(--white);
+    background: var(--nav);
 }
