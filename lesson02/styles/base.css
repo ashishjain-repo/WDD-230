@@ -7,8 +7,24 @@ body{
     background-color: red;
 }
 
+header{
+
+}
+
 main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    justify-items:center;
+}
+.section-1,.section-2,.section-3{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr,5);
+    justify-items: center;
+    border: 1px solid black;
+    width: 30vw;
+}
+img{
+    width: 25vw;
 }
