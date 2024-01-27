@@ -102,4 +102,5 @@ footer{
     padding-top: .5em;
     color: var(--white);
     background: var(--nav);
+    font-weight: 900;
 }
