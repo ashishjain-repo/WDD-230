@@ -58,14 +58,15 @@ nav a{
     text-decoration: none;
     width: 100%;
     height: 1.5rem;
-    margin-top: -.5rem;
     border-radius: 5px;
     background-color: white;
     color: darkred;
     font-weight: bolder;
+    margin: .5em 0;
 
 }
 /* Header */
+
 
 /* Main */
 main{
@@ -141,6 +142,7 @@ main{
         list-style: none;
     }
 /* Main */
+
 
 /* Footer */
 footer{
