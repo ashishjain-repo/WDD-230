@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
+    <script src="scripts/getdates.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ashish Jain">
@@ -14,8 +15,7 @@
     <link rel="stylesheet" href="./styles/base.css">
     <!-- <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css"> -->
     <link rel="stylesheet" href="./styles/larger.css">
-    <script src="scripts/main.js" defer></script>
-    <script src="scripts/getdates.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
     <title>Ashish Jain - WDD 230 - Web Frontend Development</title>
 </head>
 <body>
@@ -30,43 +30,43 @@
             <a href="">Contact</a>
         </nav>
     </header>
-
+    
     <main>
         <section>
-        <div class="main-heading">
-            <h2>WDD 230: Web Frontend Development</h2>
-        </div>
-        <div class="activities">
-        <div class="activities-title">
-            <h3 class="activities-title-headline">Learning Activities</h3>
-        </div>
-        <div class="activities-detail">
-        <ol class="activities-detail-list">
-            <li><a href="#">Holy Layout</a> | <a href="#">JS Pen</a></li>
-            <li><a href="">Media Query</a> | <a href="">Design Principles Document</a></li>
-            <li><a href="./lesson03/">CSS Combinator</a> |</li>
-        </ol>
-    </div>
-</div>
-</section>
-<section>
-<div class="information">
-    <div class="information-title">
-        <h3 class="information-title-heading">Information</h3>
-    </div>
-    <div class="information-detail">
-    <ul class="information-list">
-        <li>Rexburg, Idaho</li>
-        <li>Cold</li>
-        <li>Page Visits: 15</li>
-    </ul>
-</div>
-</div>
-</section>
+            <div class="main-heading">
+                <h2>WDD 230: Web Frontend Development</h2>
+            </div>
+            <div class="activities">
+                <div class="activities-title">
+                    <h3 class="activities-title-headline">Learning Activities</h3>
+                </div>
+                <div class="activities-detail">
+                    <ol class="activities-detail-list">
+                        <li><a href="#">Holy Layout</a> | <a href="#">JS Pen</a></li>
+                        <li><a href="">Media Query</a> | <a href="">Design Principles Document</a></li>
+                        <li><a href="./lesson03/">CSS Combinator</a> |</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="information">
+                <div class="information-title">
+                    <h3 class="information-title-heading">Information</h3>
+                </div>
+                <div class="information-detail">
+                    <ul class="information-list">
+                        <li>Rexburg, Idaho</li>
+                        <li>Cold</li>
+                        <li>Page Visits: 15</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
-
+    
     <footer>
-        <p>&copy;<script>document.write(currentYear)</script> | Ashish Jain | Rexburg, Idaho</p>
+        <p>&copy;<script>/*document.write(currentYear)*/ oLastModif();</script> | Ashish Jain | Rexburg, Idaho</p>
         <p>Last Modified: <script>document.write(oLastModif)</script></p>
     </footer>
 </body>
