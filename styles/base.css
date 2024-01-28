@@ -70,6 +70,7 @@ nav a{
 
 /* Main */
 main{
+    display: grid;
     grid-column: 2/3;
     grid-row: 2/3;
     /* border: 1px solid black; */

@@ -1,5 +1,43 @@
 @media screen and (min-width: 640px){
     body{
-        background-color: white;
+        /* background-color: white; */
     }
+
+    /* Header */
+    header{
+        grid-column: 1/4;
+        margin-top: 0;
+        grid-template-rows: max-content 50px;
+    }
+    .myname{
+        grid-template-columns:repeat(6,1fr);
+    grid-template-rows: 1fr;
+
+    }
+    .profile-image{
+        grid-column: 2/3;
+    }
+    .myname-title{
+        grid-column: 3/6;
+        font-size: 80px;
+        letter-spacing: .2em;
+    }
+    nav{
+        display: flex;
+        margin: 0 0;
+    }
+    nav a{
+        margin: 0 .5em;
+    }
+    /* Header */
+
+    /* main */
+    
+    /* main */
+
+
+
+
+
+
 }
