@@ -19,7 +19,7 @@
     }
     .myname-title{
         grid-column: 3/6;
-        font-size: 80px;
+        font-size: 3.5em;
         letter-spacing: .2em;
     }
     nav{
@@ -27,7 +27,7 @@
         margin: 0 0;
     }
     nav a{
-        margin: 0 .5em;
+        margin: 0 2em;
     }
     /* Header */
 
@@ -36,7 +36,11 @@
     /* main */
 
 
-
+/* footer */
+footer{
+    grid-column: 1/4;
+}
+/* footer */
 
 
 
