@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="scripts/main.js" defer></script>
+    <style>
+        #mobile-nav{
+            display: none;
+        }
+        .header-hamburger{
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <header></header>
+    <header>
+        <nav>
+            <div class="header-image">
+                <img src="" alt="">
+            </div>
+            <div class="header-text">
+                <h1>Chamber Name</h1>
+                <h2>Chamber of Commerce</h2>
+            </div>
+            <div class="header-social">
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+            </div>
+            <div class="header-nav">
+            <div class="header-hamburger" onclick="displayHamburger()">&#9776;</div>
+            <ul class="mobile-navbar" id="mobile-nav" onclick="displayHamburger()">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </div>
+        
+
+        </nav>
+    </header>
     <main></main>
     <footer></footer>
 </body>
