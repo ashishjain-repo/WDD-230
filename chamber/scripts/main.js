@@ -10,5 +10,6 @@ function displayHamburger()
     else
     {
         hamburger.style.display = "none";
+        gridToggle.style,gridTemplateColumns = "5em";
     }
 }
