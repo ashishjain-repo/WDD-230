@@ -8,7 +8,9 @@
 width: 480px;
 display: grid;
 grid-template-rows: max-content max-content max-content;
+/* overflow-x: hidden; */
  }  
+ /* Header */
  header{
     width: 480px;
     display: grid;
@@ -100,7 +102,47 @@ padding: .1em 0;
     background-color: darkgray;
  }
  
+/* Header */
 
 
+/* main */
+main > .main-join{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+}
+.hero-image{
+    grid-row: 1/4;
+    grid-column: 1/4;
+    width: 480px;
+    height: 320px;
+}
+.join-button{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-decoration: none;
+    border: 0.01em solid white;
+    color: white;
+    font-weight: 900;
+    padding: .4em .9em;
+    border-radius: 0.01em;
+    background-color: rgb(99, 204, 95);
+    opacity: 0.8;
+}
+.join-button:hover{
+    background-color: rgb(73, 78, 158);
+}
+
+/* main */
+
+
+
+
+
+
+
+ 
 
 }
