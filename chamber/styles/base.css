@@ -1,4 +1,4 @@
-@media screen and (min-width: 360px) and (max-width: 480px){
+@media screen and (max-width: 480px){
     *{
         margin: 0;
         padding: 0;
@@ -14,8 +14,9 @@ width: 100%;
 display: grid;
 width: 100%;
 height: fit-content;
-grid-template-columns: 4em 15em 8em 3em;
-grid-template-rows: 5em;
+grid-template-columns: 4rem 15rem 8rem 4rem ;
+/**/
+grid-template-rows: 6em;
 justify-items: center;
 align-items: center;
 background-color: rgb(102, 98, 98);
@@ -58,6 +59,7 @@ header > nav .header-ham{
     border: .1em solid black;
     display: inline;
     padding: .5em;
+    width: 100%;
  }
  .header-hamburger:hover{
     color: white;
@@ -71,7 +73,7 @@ header > nav .header-ham{
     text-align: center;
  }
  #mobile-nav{
-    display: inline-block;
+    display: none;
     text-decoration: none;
     list-style: none;
     width: 100%;
@@ -80,7 +82,7 @@ header > nav .header-ham{
 
  }
  .nav-links{
-    display: block;
+    display: inline-block;
     border: .01em solid white;
 padding: .1em 0;
     text-decoration: none;
