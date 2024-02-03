@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="scripts/main.js" defer></script>
-    <style>
-        #mobile-nav{
-            display: none;
-        }
-        .header-hamburger{
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="header-image">
-                <img src="" alt="">
-            </div>
-            <div class="header-text">
-                <h1>Chamber Name</h1>
-                <h2>Chamber of Commerce</h2>
-            </div>
-            <div class="header-social">
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-            </div>
-            <div class="header-nav">
-            <div class="header-hamburger" onclick="displayHamburger()">&#9776;</div>
-            <ul class="mobile-navbar" id="mobile-nav" onclick="displayHamburger()">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
-            </ul>
-        </div>
-        
 
-        </nav>
-    </header>
-    <main></main>
-    <footer></footer>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="scripts/main.js" defer></script>
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <style></style>
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="header-image">
+        <img class="main-logo" src="images/logo.png" alt="" />
+      </div>
+      <div class="header-text">
+        <p class="main-heading"><b>Rexburg</b><br>Chamber of Commerce</p>
+      </div>
+      <div class="header-social">
+        <a href=""><img class="social-link" src="images/facebook.png" alt="" /></a>
+        <a href=""><img class="social-link" src="images/instagram.png" alt="" /></a>
+        <a href=""><img class="social-link" src="images/twitter.png" alt="" /></a>
+      </div>
+      <div class="header-ham">
+        <div class="header-hamburger" onclick="displayHamburger()">
+          &#9776;
+        </div>
+      </div>
+      <div class="header-nav">
+      <ul class="mobile-navbar" id="mobile-nav" onclick="displayHamburger()">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Join</a></li>
+      </ul>
+    </div>
+    </nav>
+  </header>
+  <main>
+    <div style="height: 100px; background-color: white;"></div>
+  </main>
+  <footer></footer>
 </body>
+
 </html>

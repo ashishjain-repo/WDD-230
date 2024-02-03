@@ -1,9 +1,11 @@
 function displayHamburger()
 {
     var hamburger = document.getElementById("mobile-nav");
+    var gridToggle = document.getElementById("navbar");
     if (hamburger.style.display == "none")
     {
-        hamburger.style.display = "inline";
+        hamburger.style.display = "grid";
+        gridToggle.style.gridTemplateColumns = "5em 15em";
     }
     else
     {
