@@ -6,7 +6,6 @@
     }
  body{
 width: 100%;
-background-color: gray;
  }  
  header{
 
@@ -19,11 +18,12 @@ grid-template-columns: 4em 15em 8em 3em;
 grid-template-rows: 5em;
 justify-items: center;
 align-items: center;
-/* margin-top: 1em; */
+background-color: rgb(102, 98, 98);
  }
  header > nav .header-image{
     grid-column: 1/2;
     grid-row: 1/2;
+    margin: auto;
  }
  .main-logo{
     width: 3em;
@@ -31,6 +31,7 @@ align-items: center;
  header > nav .header-text{
     grid-column: 2/3;
     grid-row: 1/2;
+    color: white;
 }
 .main-heading b{
     font-size: 2em;
@@ -54,16 +55,18 @@ header > nav .header-ham{
  }
  .header-hamburger{
     cursor: pointer;
-    border: .01em solid black;
+    border: .1em solid black;
     display: inline;
     padding: .5em;
+ }
+ .header-hamburger:hover{
+    color: white;
  }
  header > nav .header-nav{
     grid-column: 1/5;
     grid-row: 2/3;
     /* display: grid; */
     grid-template-rows: repeat(4,1fr);
-    border: 1px solid black;
     width: 100%;
     text-align: center;
  }
@@ -76,13 +79,17 @@ header > nav .header-ham{
  #mobile-nav li{
 
  }
- #mobile-nav li a{
+ .nav-links{
     display: block;
-    border: 1px solid black;
+    border: .01em solid white;
 padding: .1em 0;
     text-decoration: none;
     color: white;
     width: 100%;
+    font-weight: 900;
+ }
+ .nav-links:hover{
+    background-color: darkgray;
  }
  
 
