@@ -8,7 +8,7 @@
 width: 100%;
  }  
  header{
-
+width: max-content;
  }
  header > nav{
 display: grid;
