@@ -134,6 +134,14 @@ main > .main-join{
 .join-button:hover{
     background-color: rgb(73, 78, 158);
 }
+.main-events{
+    margin-top: 1em;
+    /* border: .1em solid gray; */
+
+}
+.main-event hr{
+    size: .1em;
+}
 
 /* main */
 
