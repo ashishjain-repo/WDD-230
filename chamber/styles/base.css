@@ -141,8 +141,38 @@ main > .main-join{
 
 }
 .ruler{
-    width: 80%;
+    width: 100%;
     margin: auto;
+    opacity: 0.5;
+}
+.main-weather{
+    border: .1em solid black;
+    margin: 1em 0;
+    padding: 1em 2em;
+}
+.main-weather ul{
+list-style: none;
+display: grid;
+justify-items: center;
+align-items: center;
+}
+
+#weather-img{
+    width: 3em;
+}
+#list-1{
+    margin-top: .5em;
+}
+#list-1 p{display: inline;
+position: relative;
+bottom: 1em;
+margin-left: 1em;}
+#list-2{
+    margin-top: .5em;
+}
+#list-3{
+    margin-top: .5em;
+
 }
 
 /* main */
