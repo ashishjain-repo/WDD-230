@@ -135,12 +135,14 @@ main > .main-join{
     background-color: rgb(73, 78, 158);
 }
 .main-events{
-    margin-top: 1em;
-    /* border: .1em solid gray; */
+    border: .1em solid gray;
+    padding: 1em 2em;
+    margin: 1em 0;
 
 }
-.main-event hr{
-    size: .1em;
+.ruler{
+    width: 80%;
+    margin: auto;
 }
 
 /* main */
