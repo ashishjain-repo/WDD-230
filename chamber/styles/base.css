@@ -144,7 +144,7 @@
         text-decoration: none;
         border: 0.01em solid white;
         color: white;
-        font-weight: 900;
+        /* font-weight: 900; */
         padding: .4em .9em;
         border-radius: 0.01em;
         background-color: rgb(99, 204, 95);
