@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
     * {
         margin: 0;
         padding: 0;
@@ -23,7 +23,7 @@
         display: grid;
         width: 768px;
         height: fit-content;
-        grid-template-columns: 4rem 15rem 8rem 4rem;
+        grid-template-columns: 10em 20em 10em 8em;
         /**/
         grid-template-rows: 6em;
         justify-items: center;
@@ -81,6 +81,7 @@
         display: inline;
         padding: .2em;
         width: 100%;
+        margin-left: 2em;
     }
 
     .header-hamburger:hover {
