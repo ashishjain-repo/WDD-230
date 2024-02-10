@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     * {
         margin: 0;
         padding: 0;
@@ -6,7 +6,7 @@
     }
 
     body {
-        width: 768px;
+        width: 480px;
         display: grid;
         grid-template-rows: max-content max-content max-content;
         overflow-x: auto;
@@ -14,14 +14,14 @@
 
     /* Header */
     header {
-        width: 768px;
+        width: 480px;
         display: grid;
         grid-template-rows: 1fr;
     }
 
     header>nav {
         display: grid;
-        width: 768px;
+        width: 480px;
         height: fit-content;
         grid-template-columns: 4rem 15rem 8rem 4rem;
         /**/
