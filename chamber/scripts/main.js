@@ -20,8 +20,7 @@ function displayHamburger()
     }
     else if((hamburger.style.display == "none" && screenWidth >= 1024))
     {
-        hamburger.style.display = "flexbox";
-        console.log("1024");
+        console.log("Hurray")
     }
     else
     {
