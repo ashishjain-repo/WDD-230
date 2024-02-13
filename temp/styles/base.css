@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -11,6 +14,9 @@
     --footerText: #DDA77B;
     --bgColor: #F3E9D2;
     --borderColor: #7D98A1;
+
+    --websiteHeadingFont: "Protest Strike";
+    --navLinksFont: "Dancing Script"
 }
 @media only screen and (max-width: 480px) {
     /* Your CSS rules for mobile devices */
@@ -54,6 +60,7 @@
         font-size: 120%;
         grid-column: 2/3;
         grid-row: 1/2;
+        font-family: var(--websiteHeadingFont);
     }
     .social-links{display: none;}
     .menu-toggle button{
@@ -88,6 +95,7 @@
         display: block;
         width: 100%;
         color: var(--textColor);
+        font-family: var(--navLinksFont);
     }
     nav > ul > li:hover, a:hover{
         background-color: var(--box2Color);
@@ -148,6 +156,9 @@ background-color: var(--box1Color);
 }
 .box1 h2{
     border-bottom: .01em solid var(--borderColor);
+}
+.box1 p, .box2 p{
+    color: var(--textColor);
 }
 
 
@@ -223,6 +234,9 @@ main > .content-box2{
     grid-row: 2/3;
     grid-column: 1/4;
     text-align: center;
+}
+.company-details h3{
+    font-family: var(--websiteHeadingFont);
 }
 .footer-navbar > .copyright-info{
     text-align: center;
