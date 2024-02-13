@@ -8,13 +8,8 @@
 }
 @media only screen and (max-width: 480px) {
     /* Your CSS rules for mobile devices */
-body{
-    /* width: 480px; */
-}
+
     /* Header content only */
-    header{
-        
-    }
     .top-bar{
         display: grid;
         grid-template-columns: 20% 60% 20%;
@@ -111,9 +106,7 @@ text-align: center;
 .box1 h2{
     border-bottom: .01em solid black;
 }
-.box1 img{
-    
-}
+
 
 .box2{
     margin: 2% 1%;
