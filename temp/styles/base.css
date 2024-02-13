@@ -4,11 +4,29 @@
     padding: 0;
 }
 :root{
-    --navAndFooter: gray;
+    --navAndFooter: #738290;
+    --textColor: #FFFCF7;
+    --box1Color: #A1B5D8;
+    --box2Color: #D0D9E8;
+    --footerText: #DDA77B;
+    --bgColor: #F3E9D2;
+    --borderColor: #7D98A1;
 }
 @media only screen and (max-width: 480px) {
     /* Your CSS rules for mobile devices */
 
+    body{
+        background-color: var(--bgColor);
+    }
+    #screen-mode{
+        position: sticky;
+        top: 1%;
+        
+    }
+    #screen-mode button{
+        position: absolute;
+        right: 1%;
+    }
     /* Header content only */
     .top-bar{
         display: grid;
@@ -19,11 +37,14 @@
         height: 10vh;
 
         /* Please comment out in production */
-        border: 1px solid black;
+        border: 1px solid var(--borderColor);
         /* Please comment out in production */
+
+        background-color: var(--navAndFooter);
+        color: var(--textColor);
     }
     .logo img{
-        width: 50%;
+        width: 90%;
         grid-column: 1/2;
         grid-row: 1/2;
         position: relative;
@@ -51,20 +72,29 @@
         justify-items: center;
 
         /* Please comment out in production */
-        border: 1px solid black;
+        border: 1px solid var(--borderColor);
         /* Please comment out in production */
-
-
-
         
     }
     nav > ul > li{
         height: 3vh;
+        border: .01em solid var(--textColor);
+        width: 100%;
+        text-align: center;
+        background-color: var(--navAndFooter);
     }
     nav > ul > li > a{
         text-decoration: none;
-
+        display: block;
+        width: 100%;
+        color: var(--textColor);
     }
+    nav > ul > li:hover, a:hover{
+        background-color: var(--box2Color);
+        border-color: black;
+        color: black;
+    }
+    
 
     /* navbar content only */
 
@@ -90,33 +120,48 @@ main > .image-wrapper > img{
 main > .image-wrapper > a{
 grid-column: 2/3;
 grid-row: 2/3;
+border: .01em solid var(--borderColor);
+color: var(--footerText);
+background-color: var(--navAndFooter);
+font-weight: 900;
+text-decoration: none;
+padding: 5%;
+}
+main > .image-wrapper > a:hover{
+    color: var(--textColor);
+    background-color: var(--footerText);
 }
 
 main > .content-box1{
     display: grid;
     grid-template-rows: max-content max-content;
+    
 }
 .box1{
 margin: 2% 1%;
 /* Please comment out in production */
-border: 1px solid black;
+border: 1px solid var(--borderColor);
 /* Please comment out in production */
 text-align: center;
+
+background-color: var(--box1Color);
 }
 .box1 h2{
-    border-bottom: .01em solid black;
+    border-bottom: .01em solid var(--borderColor);
 }
 
 
 .box2{
     margin: 2% 1%;
     /* Please comment out in production */
-    border: 1px solid black;
+    border: 1px solid var(--borderColor);
     /* Please comment out in production */
     text-align: center;
+
+    background-color: var(--box1Color);
 }
 .box2 h2{
-    border-bottom: .01em solid black;
+    border-bottom: .01em solid var(--borderColor);
 }
 .box2 img{
     width: 10%;
@@ -133,8 +178,10 @@ main > .content-box2{
     padding: 1% 0;
 
     /* Please comment out in production */
-    border: 1px solid black;
+    border: 1px solid var(--borderColor);
     /* Please comment out in production */
+
+    background-color: var(--box2Color);
 }
 .brand-content h3{
     letter-spacing: .1em;
@@ -153,19 +200,24 @@ main > .content-box2{
     /* Please comment out in production */
     border: 1px solid black;
     /* Please comment out in production */
+
+    background-color: var(--navAndFooter);
+    color: var(--textColor);
 }
 .company-info{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: max-content max-content;
 
-    border-bottom: 1px solid black;
+
+    border-bottom: 1px solid var(--borderColor);
 
     padding-top: 1%;
 }
 .company-info > .logo{
     grid-row: 1/2;
     grid-column: 2/3;
+    margin-right: 25%;
 }
 .company-info > .company-details{
     grid-row: 2/3;
@@ -174,6 +226,8 @@ main > .content-box2{
 }
 .footer-navbar > .copyright-info{
     text-align: center;
+    color: var(--footerText);
+    font-weight: 900;
 }
 
 /* footer content only */
