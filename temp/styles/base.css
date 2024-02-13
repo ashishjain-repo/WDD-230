@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navAndFooter: gray;
+}
+@media only screen and (max-width: 480px) {
+    /* Your CSS rules for mobile devices */
+body{
+    /* width: 480px; */
+}
+    /* Header content only */
+    header{
+        
+    }
+    .top-bar{
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: center;
+        height: 10vh;
+
+        /* Please comment out in production */
+        border: 1px solid black;
+        /* Please comment out in production */
+    }
+    .logo img{
+        width: 50%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        position: relative;
+        left: 25%;
+    }
+    .company-name > h1{
+        font-size: 120%;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .social-links{display: none;}
+    .menu-toggle button{
+        width: 8vw;
+        height: 5vh;
+    }
+    /* Header content only */
+
+    /* navbar content only */
+
+    nav > ul{
+        display: grid;
+        grid-template-rows: repeat(4,1fr);
+        list-style: none;
+        align-items: center;
+        justify-items: center;
+
+        /* Please comment out in production */
+        border: 1px solid black;
+        /* Please comment out in production */
+
+
+
+        
+    }
+    nav > ul > li{
+        height: 3vh;
+    }
+    nav > ul > li > a{
+        text-decoration: none;
+
+    }
+
+    /* navbar content only */
+
+/* Main content only */
+main{
+    display: grid;
+    grid-template-rows: max-content max-content max-content;
+}
+main > .image-wrapper{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+}
+main > .image-wrapper > img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+main > .image-wrapper > a{
+grid-column: 2/3;
+grid-row: 2/3;
+}
+
+main > .content-box1{
+    display: grid;
+    grid-template-rows: max-content max-content;
+}
+.box1{
+margin: 2% 1%;
+/* Please comment out in production */
+border: 1px solid black;
+/* Please comment out in production */
+text-align: center;
+}
+.box1 h2{
+    border-bottom: .01em solid black;
+}
+.box1 img{
+    
+}
+
+.box2{
+    margin: 2% 1%;
+    /* Please comment out in production */
+    border: 1px solid black;
+    /* Please comment out in production */
+    text-align: center;
+}
+.box2 h2{
+    border-bottom: .01em solid black;
+}
+.box2 img{
+    width: 10%;
+}
+
+
+main > .content-box2{
+    display: grid;
+    grid-template-rows: max-content max-content max-content;
+}
+.content-box2 > .brand-content{
+    text-align: center;
+    margin: 2% 3%;
+    padding: 1% 0;
+
+    /* Please comment out in production */
+    border: 1px solid black;
+    /* Please comment out in production */
+}
+.brand-content h3{
+    letter-spacing: .1em;
+    font-size: 1.4em;
+}
+
+/* Main content only */
+
+  }
