@@ -143,4 +143,43 @@ main > .content-box2{
 
 /* Main content only */
 
+
+/* footer content only */
+.footer-navbar{
+    display: grid;
+    grid-template-rows: max-content max-content;
+    margin-top: 5%;
+
+    /* Please comment out in production */
+    border: 1px solid black;
+    /* Please comment out in production */
+}
+.company-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    border-bottom: 1px solid black;
+
+    padding-top: 1%;
+}
+.company-info > .logo{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+.company-info > .company-details{
+    grid-row: 2/3;
+    grid-column: 1/4;
+    text-align: center;
+}
+.footer-navbar > .copyright-info{
+    text-align: center;
+}
+
+/* footer content only */
+
+
+
+
+
   }
