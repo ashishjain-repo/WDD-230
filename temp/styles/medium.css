@@ -1,4 +1,244 @@
-@media only screen and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
     /* Your CSS rules for tablet view */
+
+
+    body{
+      background-color: var(--bgColor);
+  }
+  #screen-mode{
+      position: sticky;
+      top: 1%;
+      
+  }
+  #screen-mode button{
+      position: absolute;
+      right: 1%;
+  }
+  /* Header content only */
+  .top-bar{
+      display: grid;
+      grid-template-columns: 20% 40% 20% 20%;
+      grid-template-rows: 1fr;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      align-content: center;
+      height: 15vh;
+
+      /* Please comment out in production */
+      border: 1px solid var(--borderColor);
+      /* Please comment out in production */
+
+      background-color: var(--navAndFooter);
+      color: var(--textColor);
+  }
+  .logo img{
+      width: 90%;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      position: relative;
+      left: 25%;
+  }
+  .company-name > h1{
+      font-size: 120%;
+      grid-column: 2/3;
+      grid-row: 1/2;
+      font-family: var(--websiteHeadingFont);
+  }
+  .social-links{
+    display: inline-flex;
+    grid-column: 3/4;
+  }
+  .social-links img{
+    width: 100%;
+  }
+  .social-links img:hover{
+    opacity: 0.5;
+  }
+  .menu-toggle button{
+      width: 8vw;
+      height: 5vh;
+  }
+  /* Header content only */
+
+  /* navbar content only */
+
+  nav > ul{
+      display: grid;
+      grid-template-rows: repeat(4,1fr);
+      list-style: none;
+      align-items: center;
+      justify-items: center;
+
+      /* Please comment out in production */
+      border: 1px solid var(--borderColor);
+      /* Please comment out in production */
+      
+  }
+  nav > ul > li{
+      height: 3vh;
+      border: .01em solid var(--textColor);
+      width: 100%;
+      text-align: center;
+      background-color: var(--navAndFooter);
+  }
+  nav > ul > li > a{
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      color: var(--textColor);
+      font-family: var(--navLinksFont);
+  }
+  nav > ul > li:hover, a:hover{
+      background-color: var(--box2Color);
+      border-color: black;
+      color: black;
+  }
+  
+
+  /* navbar content only */
+
+/* Main content only */
+main{
+  display: grid;
+  grid-template-rows: max-content max-content max-content;
+}
+main > .image-wrapper{
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+}
+main > .image-wrapper > img{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  grid-column: 1/4;
+  grid-row: 1/4;
+}
+main > .image-wrapper > a{
+grid-column: 2/3;
+grid-row: 2/3;
+border: .01em solid var(--borderColor);
+color: var(--footerText);
+background-color: var(--navAndFooter);
+font-weight: 900;
+text-decoration: none;
+padding: 5%;
+}
+main > .image-wrapper > a:hover{
+  color: var(--textColor);
+  background-color: var(--footerText);
+}
+
+main > .content-box1{
+  display: grid;
+  grid-template-rows: max-content max-content;
+  
+}
+.box1{
+margin: 2% 1%;
+/* Please comment out in production */
+border: 1px solid var(--borderColor);
+/* Please comment out in production */
+text-align: center;
+
+background-color: var(--box1Color);
+}
+.box1 h2{
+  border-bottom: .01em solid var(--borderColor);
+}
+.box1 p, .box2 p{
+  color: var(--textColor);
+}
+
+
+.box2{
+  margin: 2% 1%;
+  /* Please comment out in production */
+  border: 1px solid var(--borderColor);
+  /* Please comment out in production */
+  text-align: center;
+
+  background-color: var(--box1Color);
+}
+.box2 h2{
+  border-bottom: .01em solid var(--borderColor);
+}
+.box2 img{
+  width: 10%;
+}
+
+
+main > .content-box2{
+  display: grid;
+  grid-template-rows: max-content max-content max-content;
+}
+.content-box2 > .brand-content{
+  text-align: center;
+  margin: 2% 3%;
+  padding: 1% 0;
+
+  /* Please comment out in production */
+  border: 1px solid var(--borderColor);
+  /* Please comment out in production */
+
+  background-color: var(--box2Color);
+}
+.brand-content h3{
+  letter-spacing: .1em;
+  font-size: 1.4em;
+}
+
+/* Main content only */
+
+
+/* footer content only */
+.footer-navbar{
+  display: grid;
+  grid-template-rows: max-content max-content;
+  margin-top: 5%;
+
+  /* Please comment out in production */
+  border: 1px solid black;
+  /* Please comment out in production */
+
+  background-color: var(--navAndFooter);
+  color: var(--textColor);
+}
+.company-info{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: max-content max-content;
+
+
+  border-bottom: 1px solid var(--borderColor);
+
+  padding-top: 1%;
+}
+.company-info > .logo{
+  grid-row: 1/2;
+  grid-column: 2/3;
+  margin-right: 25%;
+}
+.company-info > .company-details{
+  grid-row: 2/3;
+  grid-column: 1/4;
+  text-align: center;
+}
+.company-details h3{
+  font-family: var(--websiteHeadingFont);
+}
+.footer-navbar > .copyright-info{
+  text-align: center;
+  color: var(--footerText);
+  font-weight: 900;
+}
+
+/* footer content only */
+
+
+
     
   }
