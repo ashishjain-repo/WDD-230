@@ -19,14 +19,14 @@
     --navLinksFont: "Dancing Script"
 }
 [data-theme="dark"] {
-    --navAndFooter: #738290;
-    --textColor: #FFFCF7;
-    --box1Color: #A1B5D8;
-    --box2Color: #D0D9E8;
-    --footerText: #242221;
-    --bgColor: #F3E9D2;
-    --borderColor: #7D98A1;
-
+    --navAndFooter: #16232E;
+    --textColor: #FFFFFF;
+    --box1Color: #394867;
+    --box2Color: #6C7B95;
+    --footerText: #FFD700;
+    --bgColor: #1F2937;
+    --borderColor: #475569;
+    
     --websiteHeadingFont: "Protest Strike";
     --navLinksFont: "Dancing Script"
   }
