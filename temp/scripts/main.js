@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Apply additional root styles
       document.documentElement.setAttribute('data-theme', 'dark');
       // Change image source for dark mode
-      imageToSwitch.src = "./images/background-main-dark.webp";
+      imageToSwitch.src = "./images/dark.webp";
     } else {
       // Apply default root styles
       document.documentElement.removeAttribute('data-theme');
