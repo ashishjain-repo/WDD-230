@@ -18,6 +18,18 @@
     --websiteHeadingFont: "Protest Strike";
     --navLinksFont: "Dancing Script"
 }
+[data-theme="dark"] {
+    --navAndFooter: #738290;
+    --textColor: #FFFCF7;
+    --box1Color: #A1B5D8;
+    --box2Color: #D0D9E8;
+    --footerText: #242221;
+    --bgColor: #F3E9D2;
+    --borderColor: #7D98A1;
+
+    --websiteHeadingFont: "Protest Strike";
+    --navLinksFont: "Dancing Script"
+  }
 @media only screen and (max-width: 480px) {
     /* Your CSS rules for mobile devices */
 
