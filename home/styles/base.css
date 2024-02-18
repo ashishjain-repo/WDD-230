@@ -5,5 +5,117 @@
 }
 
 :root{
+    --backgroundColor: rgb(237, 231, 186);
+    --navbarColor:rgb(38, 35, 35);
+}
+@media only screen and (max-width:480px){
+    body{
+        display: grid;
+        grid-template-columns: 3% 94% 3%;
+        grid-template-rows: max-content max-content max-content max-content;
+        background-color: var(--backgroundColor); 
+    }
+    /* Header */
+    header{
+        display: grid;  
+        grid-template-columns: 30% 60% 10%;
+        grid-template-rows: max-content;
+        align-items: center;
+        justify-items: center;
+        border: 1px solid black;
+        grid-column: 2/3;
+        background-color: var(--navbarColor);
+    }
+    header > img{
+        width: 50%;
+        grid-column: 1/2;
+        margin: 3% 0;
+        border-radius: 10%;
+    }
+    header > h1{
+        grid-column: 2/3;
+        color: white;
+    }
+    header > button {
+        width: 50%;
+    }
+    /* Header */
+
+    /* Navigation*/
+    nav{
+       display: none;
+       grid-column: 2/3;
+    }
+    nav > ul{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5,1fr);
+        align-items: center;
+        justify-items: center;
+
+    }
+    nav > ul > li{
+        margin: 1% 0;
+        list-style: none;
+    }
+    nav > ul > li > a{
+        text-decoration: none;
+    }
+    /* Navigation*/
+
+
+
+    /* main */
+    main{
+        grid-column: 2/3;
+        display: grid;
+        grid-template-rows: max-content max-content max-content max-content;
+        justify-items: center;
+    }
+    .hero{
+        position: relative;
+    }
+    .hero p{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+    .hero-image{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .course{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        border: 1px solid;
+        justify-content: center;
+        
+    }
+    .course h2{
+        text-align: center;
+        border: 1px solid beige;
+        margin: 1% 0;
+    }
+    .course .learning-activities{
+
+    }
+    .learning-activities h3{
+        text-align: center;
+    }
+
+    .examples h3{
+        text-align: center;
+    }
+    /* main */
+
+
+    /* footer */
+    footer{
+        grid-column: 2/3;
+        
+    }
+    /* footer */
     
 }
