@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Protest+Revolution&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -10,6 +12,8 @@
     --navbarColor:rgb(38, 35, 35);
     --titleBgColor: rgb(227, 127, 51);
 
+    --mainFont: "Protest Revolution";
+    --restFont: "Pacifico";
 
     --titleBorderRadius: 0 0 1em 1em;
 }
@@ -19,6 +23,7 @@
         grid-template-columns: 3% 94% 3%;
         grid-template-rows: max-content max-content max-content max-content;
         background-color: var(--backgroundColor); 
+        font-family: var(--restFont);
     }
     /* Header */
     header{
@@ -41,6 +46,7 @@
     header > h1{
         grid-column: 2/3;
         color: white;
+        font-family: var(--mainFont);
     }
     header > button {
         width: 50%;
@@ -110,6 +116,7 @@
     .course h2{
         text-align: center;
         margin: 5% 0;
+        font-family: var(--mainFont);
     }
     .learning-activities{
         border: .5em solid white;
@@ -124,6 +131,7 @@
         color: white;
         background-color: var(--titleBgColor);
         border-radius: var(--titleBorderRadius);
+        font-family: var(--mainFont);
     }
     .learning-activities ul{
         padding-left: 2%;
@@ -144,6 +152,7 @@
         color: white;
         background-color: var(--titleBgColor);
         border-radius: var(--titleBorderRadius);
+        font-family: var(--mainFont);
     }
     .examples ul{
         padding-left: 2%;
@@ -167,6 +176,7 @@
         color: white;
         border: 1px solid var(--titleBgColor);
         border-radius: var(--titleBorderRadius);
+        font-family: var(--mainFont);
     }
     .information p{
         padding: 1% 0;
@@ -191,6 +201,7 @@
         color: white;
         background-color: var(--navbarColor);
         padding: 4% 0;
+        font-family: var(--mainFont);
     }
     /* footer */
     
