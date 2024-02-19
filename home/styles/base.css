@@ -5,8 +5,13 @@
 }
 
 :root{
+    /* Colors */
     --backgroundColor: rgb(237, 231, 186);
     --navbarColor:rgb(38, 35, 35);
+    --titleBgColor: rgb(227, 127, 51);
+
+
+    --titleBorderRadius: 0 0 1em 1em;
 }
 @media only screen and (max-width:480px){
     body{
@@ -25,6 +30,7 @@
         border: 1px solid black;
         grid-column: 2/3;
         background-color: var(--navbarColor);
+        margin-top: 1%;
     }
     header > img{
         width: 50%;
@@ -45,6 +51,7 @@
     nav{
        display: none;
        grid-column: 2/3;
+       background-color: whitesmoke;
     }
     nav > ul{
         display: grid;
@@ -52,7 +59,7 @@
         grid-template-rows: repeat(5,1fr);
         align-items: center;
         justify-items: center;
-
+        
     }
     nav > ul > li{
         margin: 1% 0;
@@ -60,6 +67,10 @@
     }
     nav > ul > li > a{
         text-decoration: none;
+        color: var(--titleBgColor);
+    }
+    nav > ul > li > a:hover{
+        color: black;
     }
     /* Navigation*/
 
@@ -69,7 +80,8 @@
     main{
         grid-column: 2/3;
         display: grid;
-        grid-template-rows: max-content max-content max-content max-content;
+        grid-template-rows: min-content, min-content, min-content, min-content;
+        grid-template-columns: 100%;
         justify-items: center;
     }
     .hero{
@@ -79,6 +91,9 @@
         position: absolute;
         top: 5%;
         left: 5%;
+        border: .01rem black solid;
+        padding: 1.5% 3%;
+        font-weight: 900;
     }
     .hero-image{
         width: 100%;
@@ -89,32 +104,93 @@
     .course{
         display: grid;
         grid-template-rows: auto auto auto;
-        border: 1px solid;
         justify-content: center;
         
     }
     .course h2{
         text-align: center;
-        border: 1px solid beige;
-        margin: 1% 0;
+        margin: 5% 0;
     }
-    .course .learning-activities{
-
+    .learning-activities{
+        border: .5em solid white;
+        list-style-position: inside;
+        background-color: whitesmoke;
+        border-radius: var(--titleBorderRadius);
+        
     }
     .learning-activities h3{
         text-align: center;
+        border: 1px solid var(--titleBgColor);
+        color: white;
+        background-color: var(--titleBgColor);
+        border-radius: var(--titleBorderRadius);
     }
-
+    .learning-activities ul{
+        padding-left: 2%;
+        margin: 3% 0;
+    }
+    .learning-activities ul li{
+        padding: 1% 0;
+    }
+    .examples{
+        border: .5em solid white;
+        list-style-position: inside;
+        background-color: whitesmoke;
+        border-radius: var(--titleBorderRadius);
+    }
     .examples h3{
         text-align: center;
+        border: 1px solid var(--titleBgColor);
+        color: white;
+        background-color: var(--titleBgColor);
+        border-radius: var(--titleBorderRadius);
     }
+    .examples ul{
+        padding-left: 2%;
+        margin: 3% 0;
+    }
+    .examples ul li{
+        padding: 1% 0;
+    }
+    .information{
+        border: .5em solid white;
+        border-radius: var(--titleBorderRadius);
+        max-width: 100%;
+        width: 90%;
+        text-align: center;
+        margin: 1% 0;
+        background-color: whitesmoke;
+        
+    }
+    .information h3{
+        background-color: var(--titleBgColor);
+        color: white;
+        border: 1px solid var(--titleBgColor);
+        border-radius: var(--titleBorderRadius);
+    }
+    .information p{
+        padding: 1% 0;
+    }
+.google-map{
+    width: 100%;
+    height: auto;
+}
+.map{
+    width: 100%;
+    max-width: 100%;
+}
     /* main */
 
 
     /* footer */
     footer{
         grid-column: 2/3;
-        
+        margin: 1% 0;
+        border: 1px solid;
+        text-align: center;
+        color: white;
+        background-color: var(--navbarColor);
+        padding: 4% 0;
     }
     /* footer */
     
