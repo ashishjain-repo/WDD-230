@@ -206,6 +206,7 @@
         background-color: whitesmoke;
         grid-column: 2/3;
         grid-row: 3/4;
+        align-items: center;
     }
 
     .information h3 {
@@ -217,7 +218,7 @@
     }
 
     .information p {
-        padding: 1% 0;
+        padding: 3% 0;
     }
 
     .google-map {
