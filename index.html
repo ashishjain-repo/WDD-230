@@ -1,75 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <script src="scripts/getdates.js" ></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Ashish Jain">
-    <meta name="description" content="WDD 230, Ashish Jain, This page is to keep track of this course.">
-    <meta property="og:title" content="Ashish Jain WDD 230" />
-<meta property="og:type" content="Course Website" />
-<meta property="og:url" content="" />
-<meta property="og:image" content="" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/base.css">
-    <!-- <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css"> -->
-    <link rel="stylesheet" href="./styles/larger.css">
-    <script src="./scripts/main.js"></script>
-    <title>Ashish Jain - WDD 230 - Web Frontend Development</title>
-</head>
-<body>
-    <header>
-        <div class="myname">
-            <img src="images/profile.jpg" alt="My Profile Picture" class="profile-image">
-            <h1 class="myname-title">Ashish Jain</h1>
-        </div>
-        <nav>
-            <a href="">Home</a>
-            <a href="">Site Plan</a>
-            <a href="">Contact</a>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="./styles/normalize.css">
+        <link rel="stylesheet" href="./styles/base.css">
+        <link rel="stylesheet" href="./styles/medium.css">
+        <link rel="stylesheet" href="./styles/larger.css">
+        
+        <script src="./scripts/main.js"></script>
+
+        <meta property="og:title" content="WDD 230: Frontend Web Development I">
+        <meta property="og:type" content="https://ashishjain-repo.github.io/wdd230/">
+        <meta property="og:image" content="https://ashishjain-repo.github.io/wdd230/home/images/my-pic.png">
+        <meta property="og:url" content="https://ashishjain-repo.github.io/wdd230/">
+
+        <meta name="author" content="Ashish Jain">
+        <meta name="description" content="WDD-230 Course Website - Frontend Web Development">
+
+        <title>Ashish Jain - WDD 230 - Web Frontend Development</title>
+    </head>
+    <body>
+        <header>
+            <img src="./images/my-pic.png" alt="">
+            <h1>Ashish Jain</h1>
+            <button onclick="toggleMenu()" id="hamburger-menu">&#9776;</button>
+        </header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Site Plan</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">BYU-Idaho</a></li>
+                <li><a href="#">Scripture</a></li>
+            </ul>
         </nav>
-    </header>
-    
-    <main>
-        <section class="main-heading-sec sec-1">
-        <div class="main-heading">
-            <h2>WDD 230: Web Frontend Development</h2>
-        </div>
-    </section>
-        <section class="sec-2">
-            <div class="activities">
-                <div class="activities-title">
-                    <h3 class="activities-title-headline">Learning Activities</h3>
-                </div>
-                <div class="activities-detail">
-                    <ol class="activities-detail-list">
-                        <li><a href="#">Holy Layout</a> | <a href="#">JS Pen</a></li>
-                        <li><a href="">Media Query</a> | <a href="">Design Principles Document</a></li>
-                        <li><a href="./lesson03/">CSS Combinator</a> |</li>
-                    </ol>
-                </div>
+        <main>
+            <!-- Temple Image -->
+            <div class="hero">
+                <picture>
+                    <source media="(min-width:768px)" srcset="./images/gilbert-large.webp">
+                    <source media="(min-width:480px)" srcset="./images/gilbert-small.webp">
+                    <source media="(min-width:1px)" srcset="./images/gilbert-small.webp">
+                    <img src="./images/gilbert-large.webp" alt="Gilbert LDS Temple - Arizona" class="hero-image">
+                </picture>
+                <p>Gilbert Arizona Temple</p>
             </div>
-        </section>
-        <section class="sec-3">
-            <div class="information">
-                <div class="information-title">
-                    <h3 class="information-title-heading">Information</h3>
+            <!-- Temple Image -->
+            <!--  -->
+            <div class="headline">
+            <h2>WDD 230: Web Frontend Development</h2>
+            </div>
+            <!--  -->
+            <!-- Section 1 -->
+            <div class="course">
+                <div class="learning-activities">
+                    <h3>Learning Activities</h3>
+                    <ul>
+                        <li><a href="#">Lesson 02 - Media Queries</a></li>
+                        <li><a href="#">Lesson 02 - Design Priniciples</a></li>
+                        <li><a href="#">CSS Selector Results</a></li>
+                        <li><a href="#">Chamber Site Plan</a></li>
+                        <li><a href="#">Book of Mormon Chapters</a></li>
+                    </ul>
                 </div>
-                <div class="information-detail">
-                    <ul class="information-list">
-                        <li>Rexburg, Idaho</li>
-                        <li>Cold</li>
-                        <li>Page Visits: 15</li>
+                <div class="examples">
+                    <h3>Examples</h3>
+                    <ul>
+                        <li><a href="#">DOM Manipulations</a></li>
+                        <li><a href="#">Javascript Event Handling</a></li>
                     </ul>
                 </div>
             </div>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy;<script>document.write(currentYear)</script> | Ashish Jain | Rexburg, Idaho</p>
-        <p>Last Modified: <script>document.write(oLastModif)</script></p>
-    </footer>
+            <!-- Section 1 -->
+            <!-- #################################################################### -->
+            <!-- Section 2 -->
+            <div class="information">
+                <h3>Information</h3>
+                <p class="place">Rexburg</p>
+                <p class="temp">Cold</p>
+                <p class="visit">Page Visits: 15</p>
+            </div>
+            <!-- Section 2 -->
+            <!-- #################################################################### -->
+            <!-- Section 3 -->
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46051.900461901685!2d-111.82938242691954!3d43.830043049865616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4b807a98b1%3A0x4a49d8d1d2181c73!2sRexburg%2C%20ID!5e0!3m2!1sen!2sus!4v1708024551401!5m2!1sen!2sus" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            </div>
+            <!-- Section 3 -->
+        </main>
+        <footer>
+            <p>&copy;<span id="copyrightYear"> <script>document.write(copyrightYear);</script></span> | Ashish Jain | Rexburg, ID</p>
+            <p id="lastModified">Last Modified: <span id="modifiedTime"><script>document.write(formattedDate);</script></span></p>
+        </footer>
+<script src="./scripts/main.js"></script>
 </body>
 </html>

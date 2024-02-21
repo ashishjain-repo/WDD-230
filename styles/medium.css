@@ -1,16 +1,15 @@
-@media (min-width:769px) {
-    body {
+@media (min-width:480px) and (max-width:768px){
+    body{
         display: grid;
         grid-template-columns: 3% 94% 3%;
         grid-template-rows: max-content max-content max-content max-content;
-        background-color: var(--backgroundColor);
+        background-color: var(--backgroundColor); 
         font-family: var(--restFont);
     }
-
     /* Header */
-    header {
-        display: grid;
-        grid-template-columns: 30% 70%;
+    header{
+        display: grid;  
+        grid-template-columns: 30% 60% 10%;
         grid-template-rows: max-content;
         align-items: center;
         justify-items: center;
@@ -19,79 +18,64 @@
         background-color: var(--navbarColor);
         margin-top: 1%;
     }
-
-    header>img {
-        width: 25%;
+    header > img{
+        width: 50%;
         grid-column: 1/2;
         margin: 3% 0;
         border-radius: 10%;
     }
-
-    header>h1 {
+    header > h1{
         grid-column: 2/3;
         color: white;
         font-family: var(--mainFont);
     }
-
-    header>button {
+    header > button {
         width: 50%;
         height: 25%;
-        display: none;
     }
-
     /* Header */
 
     /* Navigation*/
-    nav {
-        grid-column: 2/3;
-        background-color: whitesmoke;
+    nav{
+       display: none;
+       grid-column: 2/3;
+       background-color: whitesmoke;
     }
-
-    nav>ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        column-gap: 10%;
-
+    nav > ul{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5,1fr);
+        align-items: center;
+        justify-items: center;
+        
     }
-
-    nav>ul>li {
+    nav > ul > li{
         margin: 1% 0;
         list-style: none;
     }
-
-    nav>ul>li>a {
+    nav > ul > li > a{
         text-decoration: none;
         color: var(--titleBgColor);
     }
-
-    nav>ul>li>a:hover {
+    nav > ul > li > a:hover{
         color: black;
     }
-
     /* Navigation*/
 
 
 
     /* main */
-    main {
+    main{
         grid-column: 2/3;
         display: grid;
         grid-template-rows: repeat(4, max-content);
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 100%;
         justify-items: center;
-        row-gap: .5%;
-
     }
-
-    .hero {
+    .hero{
         position: relative;
-        grid-column: 1/3;
-        grid-row: 1/2;
-
     }
-
-    .hero p {
+    .hero p{
         position: absolute;
         top: 5%;
         left: 5%;
@@ -99,45 +83,34 @@
         padding: 1.5% 3%;
         font-weight: 900;
     }
-
-    .hero-image {
+    .hero-image{
         width: 94vw;
         max-width: 100%;
         height: auto;
     }
-
-    .headline {
-        grid-column: 1/3;
-        grid-row: 2/3;
-    }
-
-    .headline h2 {
+    .headline h2{
         text-align: center;
         margin: 5% 0;
         font-family: var(--mainFont);
-
     }
 
-    .course {
+    .course{
         display: grid;
         grid-template-rows: auto auto auto;
-        grid-template-columns: 47vw;
+        grid-template-columns: 94vw;
         justify-content: center;
-        grid-column: 1/2;
-        grid-row: 3/4;
-
+        
     }
-
-    .learning-activities {
+    
+    .learning-activities{
         border: .5em solid white;
         list-style-position: inside;
         background-color: whitesmoke;
         border-radius: var(--titleBorderRadius);
-
-
+        
+        
     }
-
-    .learning-activities h3 {
+    .learning-activities h3{
         text-align: center;
         border: 1px solid var(--titleBgColor);
         color: white;
@@ -145,32 +118,22 @@
         border-radius: var(--titleBorderRadius);
         font-family: var(--mainFont);
     }
-
-    .learning-activities ul {
+    .learning-activities ul{
         padding-left: 2%;
         margin: 3% 0;
     }
-
-    .learning-activities ul li {
+    .learning-activities ul li{
         padding: 1% 0;
     }
-
-    .learning-activities ul li a {
-        color: black;
-    }
-
-    .learning-activities ul li a:hover {
-        color: blue;
-    }
-
-    .examples {
+    .learning-activities ul li a{color: black;}
+    .learning-activities ul li a:hover{color: blue;}
+    .examples{
         border: .5em solid white;
         list-style-position: inside;
         background-color: whitesmoke;
         border-radius: var(--titleBorderRadius);
     }
-
-    .examples h3 {
+    .examples h3{
         text-align: center;
         border: 1px solid var(--titleBgColor);
         color: white;
@@ -178,68 +141,52 @@
         border-radius: var(--titleBorderRadius);
         font-family: var(--mainFont);
     }
-
-    .examples ul {
+    .examples ul{
         padding-left: 2%;
         margin: 3% 0;
     }
-
-    .examples ul li {
+    .examples ul li{
         padding: 1% 0;
     }
-
-    .examples ul li a {
+    .examples ul li a{
         color: black;
     }
-
-    .examples ul li a:hover {
-        color: blue;
-    }
-
-    .information {
+    .examples ul li a:hover{color: blue;}
+    .information{
         border: .5em solid white;
         border-radius: var(--titleBorderRadius);
         max-width: 100%;
-        width: 90%;
+        width: 100%;
         text-align: center;
         margin: 1% 0;
         background-color: whitesmoke;
-        grid-column: 2/3;
-        grid-row: 3/4;
-        align-items: center;
+        
     }
-
-    .information h3 {
+    .information h3{
         background-color: var(--titleBgColor);
         color: white;
         border: 1px solid var(--titleBgColor);
         border-radius: var(--titleBorderRadius);
         font-family: var(--mainFont);
     }
-
-    .information p {
-        padding: 3% 0;
+    .information p{
+        padding: 1% 0;
     }
-
-    .google-map {
-        width: 100%;
-        height: auto;
-        grid-column: 1/3;
-        grid-row: 4/5;
-    }
-
-    .map {
-        width: 100%;
-        max-width: 100%;
-    }
-
+.google-map{
+    width: 100%;
+    height: auto;
+}
+.map{
+    width: 100%;
+    max-width: 100%;
+}
     /* main */
 
 
     /* footer */
-    footer {
+    footer{
         grid-column: 2/3;
-        margin: 4% 0 1% 0;
+        margin: 1% 0;
         border: 1px solid;
         text-align: center;
         color: white;
@@ -247,7 +194,6 @@
         padding: 4% 0;
         font-family: var(--mainFont);
     }
-
     /* footer */
-
+    
 }

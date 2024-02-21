@@ -1,167 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Protest+Revolution&display=swap');
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
-}
-body{
-    display: grid;
-    grid-template-columns: 1fr 640px 1fr;
-    grid-template-rows:330px 1fr max-content;
-    background-color: rgba(160, 138, 95, 0.378);
-}
-/* Header */
-header{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-grid-row: 1/2;
-grid-column: 2/3;
-margin-top: 1rem;
-}
-.myname{
-    display: grid;
-    grid-template-columns:40% 60%;
-    grid-template-rows: 1fr;
-    background-color: black;
-    align-items: center;
-    justify-items: center;
-    grid-row: 1/2;
-    border-radius: 5px;
-    height: 180px;
-
-}
-.profile-image{
-    width: 120px;
-    height: 120px;
-    grid-row: 1/2;
-    grid-column: 1/2;
-    border-radius: 30px;
-}
-.myname-title{
-grid-row: 1/2;
-grid-column: 2/3;
-text-align: center;
-color: white;
-
-}
-nav{
-    text-align: center;
-    grid-row: 2/3;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin-top: 1em;
-    align-self: center;
+    margin: 0;
+    padding: 0;
 }
 
-nav a{
-    border: 1px solid white;
-    text-decoration: none;
-    width: 100%;
-    height: 1.5rem;
-    border-radius: 5px;
-    background-color: white;
-    color: darkred;
-    font-weight: bolder;
-    margin: .5em 0;
+:root{
+    /* Colors */
+    --backgroundColor: rgb(237, 231, 186);
+    --navbarColor:rgb(38, 35, 35);
+    --titleBgColor: rgb(227, 127, 51);
 
-}
-/* Header */
+    --mainFont: "Protest Revolution";
+    --restFont: "Pacifico";
 
-
-/* Main */
-main{
-    display: grid;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    /* border: 1px solid black; */
+    --titleBorderRadius: 0 0 1em 1em;
 }
-.main-heading{
-    text-align: center;
-}
-/* .activities{border: 1px solid black;} */
-.activities-title{
-    /* border: 1px solid black; */
-    text-align: center;
-    display: grid;
-    height: 4rem;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1em;
-    border-radius: 5px;
-    background: white;
-}
-.activities-title-headline{
-    /* border: 1px solid black; */
-    padding: .5rem 14rem ;
-    border-radius: 5px;
-    background-color: darkred;
-    color: white;
-    
-}
-.activities-detail{
-    /* border: 1px solid; */
-    margin-top: .5rem;
-    display: grid;
-    justify-content: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: white;
-    border-radius: 5px;
-}
-.activities-detail-list li{
-    margin: .3rem 0;
-}
-.activities-detail-list li a{
-    color: darkred;
-}
-/* .information{} */
-.information-title{text-align: center;
-    display: grid;
-    height: 4rem;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1em;
-    border-radius: 5px;
-    background: white;}
-.information-title-heading{border: 1px solid black;
-    padding: .5rem 14rem ;
-    border-radius: 5px;
-    background-color: darkred;
-    color: white;}
-    .information-detail{
-        /* border: 1px solid; */
-    margin-top: .5rem;
-    display: grid;
-    justify-content: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: white;
-    border-radius: 5px;
+@media only screen and (max-width:480px){
+    body{
+        display: grid;
+        grid-template-columns: 3% 94% 3%;
+        grid-template-rows: max-content max-content max-content max-content;
+        background-color: var(--backgroundColor); 
+        font-family: var(--restFont);
     }
-    .information-list li{
-        margin: .3rem 0;
+    /* Header */
+    header{
+        display: grid;  
+        grid-template-columns: 30% 60% 10%;
+        grid-template-rows: max-content;
+        align-items: center;
+        justify-items: center;
+        border: 1px solid black;
+        grid-column: 2/3;
+        background-color: var(--navbarColor);
+        margin-top: 1%;
+    }
+    header > img{
+        width: 50%;
+        grid-column: 1/2;
+        margin: 3% 0;
+        border-radius: 10%;
+    }
+    header > h1{
+        grid-column: 2/3;
+        color: white;
+        font-family: var(--mainFont);
+    }
+    header > button {
+        width: 50%;
+        height: 25%;
+    }
+    /* Header */
+
+    /* Navigation*/
+    nav{
+       display: none;
+       grid-column: 2/3;
+       background-color: whitesmoke;
+    }
+    nav > ul{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5,1fr);
+        align-items: center;
+        justify-items: center;
+        
+    }
+    nav > ul > li{
+        margin: 1% 0;
         list-style: none;
     }
-/* Main */
+    nav > ul > li > a{
+        text-decoration: none;
+        color: var(--titleBgColor);
+    }
+    nav > ul > li > a:hover{
+        color: black;
+    }
+    /* Navigation*/
 
 
-/* Footer */
-footer{
-    grid-column: 2/3;
-    grid-row: 3/4;
+
+    /* main */
+    main{
+        grid-column: 2/3;
+        display: grid;
+        grid-template-rows: repeat(4, max-content);
+        grid-template-columns: 100%;
+        justify-items: center;
+    }
+    .hero{
+        position: relative;
+    }
+    .hero p{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        border: .01rem black solid;
+        padding: 1.5% 3%;
+        font-weight: 900;
+    }
+    .hero-image{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .headline h2{
+        text-align: center;
+        margin: 5% 0;
+        font-family: var(--mainFont);
+    }
+    .course{
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        
+    }
+   
+    .learning-activities{
+        border: .5em solid white;
+        list-style-position: inside;
+        background-color: whitesmoke;
+        border-radius: var(--titleBorderRadius);
+        width: 94vw;
+        
+    }
+    .learning-activities h3{
+        text-align: center;
+        border: 1px solid var(--titleBgColor);
+        color: white;
+        background-color: var(--titleBgColor);
+        border-radius: var(--titleBorderRadius);
+        font-family: var(--mainFont);
+    }
+    .learning-activities ul{
+        padding-left: 2%;
+        margin: 3% 0;
+    }
+    .learning-activities ul li{
+        padding: 1% 0;
+    }
+    .learning-activities ul li a{color: black;}
+    .learning-activities ul li a:hover{color: blue;}
+    .examples{
+        border: .5em solid white;
+        list-style-position: inside;
+        background-color: whitesmoke;
+        border-radius: var(--titleBorderRadius);
+    }
+    .examples h3{
+        text-align: center;
+        border: 1px solid var(--titleBgColor);
+        color: white;
+        background-color: var(--titleBgColor);
+        border-radius: var(--titleBorderRadius);
+        font-family: var(--mainFont);
+    }
+    .examples ul{
+        padding-left: 2%;
+        margin: 3% 0;
+    }
+    .examples ul li{
+        padding: 1% 0;
+    }
+    .examples ul li a{
+        color: black;
+    }
+    .examples ul li a:hover{color: blue;}
+    .information{
+        border: .5em solid white;
+        border-radius: var(--titleBorderRadius);
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        margin: 1% 0;
+        background-color: whitesmoke;
+        
+    }
+    .information h3{
+        background-color: var(--titleBgColor);
+        color: white;
+        border: 1px solid var(--titleBgColor);
+        border-radius: var(--titleBorderRadius);
+        font-family: var(--mainFont);
+    }
+    .information p{
+        padding: 1% 0;
+    }
+.google-map{
+    width: 100%;
+    height: auto;
 }
-/* Footer */
-
-footer{
-    text-align: center;
-    margin-top: 1rem;
-    /* border: 1px solid black; */
-    height: 3em;
-    display: grid;
-    align-content:center;
-    color: darkred;
-    font-weight: 800;
-    background-color: white;
-    border-radius: 5px;
+.map{
+    width: 100%;
+    max-width: 100%;
 }
-/* Comment */
+    /* main */
+
+
+    /* footer */
+    footer{
+        grid-column: 2/3;
+        margin: 1% 0;
+        border: 1px solid;
+        text-align: center;
+        color: white;
+        background-color: var(--navbarColor);
+        padding: 4% 0;
+        font-family: var(--mainFont);
+    }
+    /* footer */
+    
+}
