@@ -1,31 +1,30 @@
-function displayHamburger()
-{
-    var hamburger = document.getElementById("mobile-nav");
-    var gridToggle = document.getElementById("navbar");
-    var screenWidth = screen.availWidth;
-    if (hamburger.style.display == "none" && (screenWidth > 480 && screenWidth < 768) )
-    {
-        hamburger.style.display = "grid";
-        gridToggle.style.gridTemplateColumns = "10em 20em 10em 8em";
-        gridToggle.style.gridTemplateRows = "6em 100%";
-        console.log("768");
-    }
-    else if (hamburger.style.display == "none" && screenWidth <= 480)
-    {
-        hamburger.style.display = "grid";
-        gridToggle.style.gridTemplateColumns = "5em 15em";
-        gridToggle.style.gridTemplateRows = "6em 100%";
-        console.log("480");
+function toggleMenu() {
+    const navbar = document.getElementById('navbar');
+    navbar.style.display = (navbar.style.display === 'none' || navbar.style.display === '') ? 'block' : 'none';
+  }
 
+document.getElementById('last-modified').textContent = document.lastModified;
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const rootSwitchToggle = document.getElementById("rootSwitchToggle");
+  const imageToSwitch = document.getElementById("hero");
+  
+  rootSwitchToggle.addEventListener("click", function() {
+    // Check if the current root theme is default or additional
+    const isDefault = document.documentElement.getAttribute('data-theme') !== 'dark';
+
+    // Toggle between default and additional root styles
+    if (isDefault) {
+      // Apply additional root styles
+      document.documentElement.setAttribute('data-theme', 'dark');
+      // Change image source for dark mode
+      imageToSwitch.src = "./images/new-dark.webp";
+    } else {
+      // Apply default root styles
+      document.documentElement.removeAttribute('data-theme');
+      // Change image source for default mode
+      imageToSwitch.src = "./images/backgroud-main.webp";
     }
-    else if((hamburger.style.display == "none" && screenWidth >= 1024))
-    {
-        console.log("Hurray")
-    }
-    else
-    {
-        hamburger.style.display = "none";
-        // gridToggle.style.gridTemplateColumns = "10em 20em 10em 8em";
-        console.log("none");
-    }
-}
+  });
+});

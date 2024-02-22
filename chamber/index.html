@@ -2,132 +2,123 @@
 <html lang="en">
 
 <head>
-  <title>Chamber of Commerce - Rexburg</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Ashish (Ash) Jain">
-  <meta name='description' content='This is the chamber site plan for WDD230'>
+    <meta name="author" content="Ashish Jain">
+    <meta property="og:title" content="This is an unofficial website for Rexburg - Chamber of Commerce">
+    <meta property="og:type" content="Website">
+    <meta property="og:image" content="No Image To Show">
+    <meta property="og:url" content="ashishjain-repo.github.io/wdd230">
 
-  <meta name='og:title' content='Chamber of Commerce - Rexburg'>
-  <meta name='og:type' content='Website'>
-  <meta name='og:url' content='https://www.ashishjain-repo/wdd230/chamber.github.io'>
-  <meta name='og:image' content=''>
+    <title>Rexburg - Chamber of Commerce</title>
 
-  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-  <link rel="stylesheet" href="styles/normalize.css" />
-  <link rel="stylesheet" href="styles/base.css" />
-  <link rel="stylesheet" href="styles/medium.css">
-  <link rel="stylesheet" href="styles/larger.css">
-
-  <script src="scripts/main.js" defer></script>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/larger.css">
 </head>
 
 <body>
-  <header>
-    <nav id="navbar">
-      <div class="header-image">
-        <img class="main-logo" src="images/logo.png" alt="" />
-      </div>
-      <div class="header-text">
-        <h1 class="main-heading"><b>Rexburg</b><br>Chamber of Commerce</h1>
-      </div>
-      <div class="header-social">
-        <a href=""><img class="social-link" src="images/facebook.png" alt="" /></a>
-        <a href=""><img class="social-link" src="images/instagram.png" alt="" /></a>
-        <a href=""><img class="social-link" src="images/twitter.png" alt="" /></a>
-      </div>
-      <div class="header-ham">
-        <div class="header-hamburger" onclick="displayHamburger()">
-          &#9776;
+    <div id="screen-mode">
+        <button id="rootSwitchToggle">&#127774</button>
+    </div>
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="./images/logo.png" alt="Company Logo">
+            </div>
+            <div class="company-name">
+                <h1>Rexburg - Chamber of Commerce</h1>
+            </div>
+            <div class="social-links">
+                <a href="#"><img src="./images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="./images/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="./images/instagram.png" alt="Instagram"></a>
+            </div>
+            <div class="menu-toggle">
+                <button onclick="toggleMenu()">☰</button>
+            </div>
         </div>
-      </div>
-      <div class="header-nav">
-        <ul class="mobile-navbar" id="mobile-nav" onclick="displayHamburger()">
-          <li><a href="#" class="nav-links">Home</a></li>
-          <li><a href="#" class="nav-links">Discover</a></li>
-          <li><a href="#" class="nav-links">Directory</a></li>
-          <li><a href="#" class="nav-links">Join</a></li>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
-      </div>
     </nav>
-  </header>
-  <main>
-    <div class="main-join">
-      <img src="images/backgroud-main.webp" alt="" class="hero-image">
-      <a href="#" class="join-button">Join the Chamber</a>
-    </div>
-    <div class="main-events">
-      <h3>Events</h3>
-      <hr class="ruler">
-      <p><b>Lorem ipsum dolor sit amet consectetu</b></p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quos maxime sapiente distinctio voluptatum
-        aliquam, velit ad illum minus consequuntur?</p>
-    </div>
-    <div class="main-weather">
-      <h3>Weather</h3>
-      <hr class="ruler">
-      <ul>
-        <li id="list-1"><img src="./images/sun.png" alt="" id="weather-img">
-          <p>33&deg;<b>Sunny</b></p>
-        </li>
-        <li id="list-2">Humidity: 35%</li>
-        <li id="list-3">Wind Chill: N/A</li>
-      </ul>
-    </div>
-    <div class="main-spotlight">
-      <div class="mobile-headline">
-        <h3>Members Spotlight</h3>
-      </div>
-      <div class="main-feedback feedback-1 feedback-common">
-        <h1>Some Brand</h1>
-        <p>"Some Slogan will go here"</p>
-        <ul>
-          <li>brand@brandname.com</li>
-          <li>+123-456-7890</li>
-          <li><a href="">Website</a></li>
-        </ul>
-      </div>
-      <div class="main-feedback feedback-2 feedback-common">
-        <h1>Some Brand</h1>
-        <p>"Some Slogan will go here"</p>
-        <ul>
-          <li>brand@brandname.com</li>
-          <li>+123-456-7890</li>
-          <li><a href="">Website</a></li>
-        </ul>
-      </div>
-      <div class="main-feedback feedback-3 feedback-common">
-        <h1>Some Brand</h1>
-        <p>"Some Slogan will go here"</p>
-        <ul>
-          <li>brand@brandname.com</li>
-          <li>+123-456-7890</li>
-          <li><a href="">Website</a></li>
-        </ul>
-      </div>
-    </div>
-      <!-- </div> -->
-  </main>
+    <main>
+        <div class="image-wrapper">
+            <img src="./images/backgroud-main.webp" alt="Image" id="hero">
+            <a href="#">Your Link</a>
+        </div>
+        <div class="content-box1">
+            <div class="box1">
+                <h2>Events</h2>
+                <p><b>Lorem ipsum dolor sit amet consectetur.</b></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint perspiciatis nisi fugiat aut veritatis
+                    temporibus, adipisci non. Numquam tempora neque sunt est, nam, explicabo eligendi sequi praesentium
+                    dolores, a vel?</p>
+            </div>
+            <div class="box2">
+                <h2>Weather</h2>
+                <img src="./images/sun.png" alt="Sunny - weather image" title="Sunny Weather">
+                <p><b>Temperature: </b>-3&deg;</p>
+                <p><b>Wind Chill: </b>10 km/h</p>
+            </div>
+        </div>
+        <div class="content-box2">
+            <div class="box-1 brand-content">
+                <h3>EcoTech Solutions</h3>
+                <p><b>"Green Solutions for a Sustainable Future"</b></p>
+                <a href="#">info@ecotechsolutions.com</a>
+                <p>+1 (555) 123-4567</p>
+                <a href="#">www.ecotechsolutions.com</a>
+            </div>
+            <div class="box-2 brand-content">
+                <h3>TechNova Innovations</h3>
+                <p><b>"Innovating Tomorrow's Technology Today"</b></p>
+                <a href="#">contact@technovainnovations.com</a>
+                <p>+1 (555) 987-6543</p>
+                <a href="#">www.technovainnovations.com</a>
+            </div>
+            <div class="box-3 brand-content">
+                <h3>HealthPlus Wellness</h3>
+                <p><b>"Empowering Healthier Lives Every Day"</b></p>
+                <a href="#">info@healthpluswellness.com</a>
+                <p>+1 (555) 321-7890</p>
+                <a href="#">www.healthpluswellness.com</a>
+            </div>
+        </div>
+    </main>
 
-  <footer>
-    <img src="./images/logo.png" alt="" class="footer-logo">
-    <h1 class="footer-headline">Rexburg Chamber of Commerce</h1>
-    <p class="footer-address">123 Some Place, Rexburg 000</p>
-    <ul class="footer-about">
-      <li>info@rexcoc.xyz</li>
-      <li>+(123) 456-7890</li>
-      <li>Location Map</li>
-    </ul>
-    <hr class="ruler footer-ruler">
-    <ul class="footer-plan">
-      <li>&copy; 2024 Rexburg Chamber</li>
-      <li class="author">Ashish Jain</li>
-      <li>WDD 230 Project</li>
-      <li>Last Modification: </li>
-    </ul>
-  </footer>
+    <footer>
+        <div class="footer-navbar">
+            <div class="company-info">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="Company Logo">
+                </div>
+                <div class="company-details">
+                    <h3>Rexburg Chamber of Commerce</h3>
+                    <p>Address: 123 Main Street, Rexburg, Idaho, USA</p>
+                    <p>Email: info@rexburgchamberofcommerce.com</p>
+                    <p>Phone: +1 (208) 555-1234</p>
+                </div>
+            </div>
+            <div class="copyright-info">
+                <p>&copy; 2024 Rexburg - COC</p>
+                <p>Created by: Ashish Jain</p>
+                <p>Project: WDD230-Chamber</p>
+                <p>Last modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>
