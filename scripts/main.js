@@ -32,6 +32,10 @@ function changePageVisit()
 if (numVisits !== 0) {
 	visitsDisplay.textContent = numVisits;
 }
+else
+{
+  visitsDisplay.textContent = 0;
+}
 
 numVisits++;
 
