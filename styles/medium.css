@@ -192,8 +192,8 @@
         color: white;
         background-color: var(--navbarColor);
         padding: 4% 0;
+        /* footer */
         font-family: var(--mainFont);
     }
-    /* footer */
     
 }
