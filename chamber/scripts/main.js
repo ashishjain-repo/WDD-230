@@ -28,3 +28,36 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Check if localStorage is supported
+  if (typeof(Storage) !== "undefined") {
+    // Get the last visit date from localStorage
+    var lastVisit = localStorage.getItem("lastVisit");
+    var currentDate = new Date().getTime(); // Current timestamp
+
+    if (lastVisit) {
+      // Calculate the difference in milliseconds between visits
+      var timeDifference = currentDate - lastVisit;
+      var millisecondsInDay = 1000 * 60 * 60 * 24;
+      var daysDifference = Math.floor(timeDifference / millisecondsInDay);
+
+      if (daysDifference < 1) {
+        document.getElementById("sidebar").innerText = "Back so soon! Awesome!";
+      } else {
+        var message = "You last visited ";
+        message += daysDifference + (daysDifference === 1 ? " day" : " days") + " ago.";
+        document.getElementById("sidebar").innerText = message;
+      }
+    } else {
+      // If this is the first visit, display a welcome message
+      document.getElementById("sidebar").innerText = "Welcome! Let us know if you have any questions.";
+    }
+
+    // Update the last visit date in localStorage
+    localStorage.setItem("lastVisit", currentDate);
+  } else {
+    // If localStorage is not supported, notify the user
+    document.getElementById("sidebar").innerText = "LocalStorage is not supported in your browser.";
+  }
+});
