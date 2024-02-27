@@ -1,0 +1,51 @@
+@media only screen and (max-width: 480px) {
+    #discover-main {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: max-content max-content;
+        text-align: center;
+
+    }
+
+    #discover-main>.discover-section1 {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-items: center;
+        margin-top: 2%;
+    }
+
+    .discover-section1>.discover-content {
+        border: 1px solid black;
+        height: 20vh;
+        width: 90vw;
+        margin: 1% 0;
+        display: grid;
+        padding: 3% 0;
+        background-color: var(--box1Color);
+        color: var(--textColor);
+    }
+    .discover-section1>.discover-content h3{
+        letter-spacing: .2em;
+        font-weight: bolder;
+        font-size: 1.5rem;
+    }
+
+    #discover-main>.discover-section2 {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    #discover-main>.discover-section2 h2 {
+        margin: 1% 0;
+    }
+
+    .discover-section2 div img {
+        max-width: 100%;
+        width: 90%;
+        margin: 1% 0;
+        filter: saturate(50%);
+    }
+    .discover-section2 div img:hover{
+        filter: none;
+    }
+}
