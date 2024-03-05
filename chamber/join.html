@@ -54,36 +54,114 @@
         </ul>
     </nav>
     <main>
-        <form action="thankyou.html" method="get">
-            <label for="_firstName">First Name:</label>
-            <input type="text" name="" id="_firstName" required>
-            <label for="_lastName">Last Name:</label>
-            <input type="text" name="" id="_lastName" required>
-            <label for="_titlePosition">Title or Position</label>
-            <input type="text" name="" id="_titlePosition" required>
-            <label for="_email"></label>
-            <input type="email" name="" id="_email" placeholder="test@email.xyz" title="A valid email address" required>
-            <label for="_mobilePhone"></label>
-            <input type="tel" name="" id="_mobilePhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-            <label for="_businessName"></label>
-            <input type="text" name="" id="_businessName">
-            
-            <p>Membership Level: </p>
-            <label for="_nonProfit">NP Membership</label>
-            <input type="radio" name="" id="_nonProfit">
-            <label for="_bronze">Bronze Membership</label>
-            <input type="radio" name="" id="_bronze">
-            <label for="_silver">Silver Membership</label>
-            <input type="radio" name="" id="_silver">
-            <label for="_gold">Gold Membership</label>
-            <input type="radio" name="" id="_gold">
+        <section class="membership-form">
+            <form action="thankyou.html" method="get">
 
-            <label for="">Business Description:</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            
-            <input type="submit" value="">
-            
-        </form>
+                <label for="_firstName">
+                    First Name:
+                    <input type="text" name="" id="_firstName" required>
+                </label>
+
+                <label for="_lastName">
+                    Last Name:
+                    <input type="text" name="" id="_lastName" required>
+                </label>
+
+                <label for="_titlePosition">
+                    Title or Position
+                    <input type="text" name="" id="_titlePosition" pattern="[A-Za-z\-\s]{7,}" required>
+                </label>
+
+                <label for="_email">
+                    Email:
+                    <input type="email" name="" id="_email" placeholder="test@email.xyz" title="A valid email address"
+                        required>
+                </label>
+
+                <label for="_mobilePhone">
+                    Mobile Phone:
+                    <input type="tel" name="" id="_mobilePhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </label>
+
+                <label for="_businessName">
+                    Business Name:
+                    <input type="text" name="" id="_businessName">
+                </label>
+
+                <p>Membership Level: </p>
+                <label for="_nonProfit">
+                    NP Membership
+                    <input type="radio" name="" id="_nonProfit">
+                </label>
+                <label for="_bronze">
+                    Bronze Membership
+                    <input type="radio" name="" id="_bronze">
+                </label>
+                <label for="_silver">
+                    Silver Membership
+                    <input type="radio" name="" id="_silver">
+                </label>
+                <label for="_gold">
+                    Gold Membership
+                    <input type="radio" name="" id="_gold">
+                </label>
+
+                <label for="">
+                    Business Description:
+                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                </label>
+
+                <input type="submit" value="">
+
+            </form>
+        </section>
+
+        <section class="membership-details">
+            <div class="membership np">
+                <h2>Non-Profit Membership</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore autem enim consequatur quae
+                    perferendis ea tenetur fugiat eius hic obcaecati nostrum necessitatibus, blanditiis ipsum
+                    voluptatibus minus, eos voluptas cumque iure? Explicabo eveniet deserunt hic facere nam ipsa vitae
+                    quos, suscipit modi praesentium ea est accusantium! Aliquam ipsam illo reiciendis, nam ducimus
+                    adipisci, corrupti optio perspiciatis ullam quo cum harum quaerat? Nobis doloribus quae sed
+                    incidunt, facilis sit maxime illo temporibus quisquam fugit eum deleniti distinctio rem!
+                    Reprehenderit iste quia eum laudantium odit sapiente illo error, fugit deserunt vitae, placeat,
+                    quasi a quas laborum? Aperiam nostrum quia ipsum autem at maiores.</p>
+            </div>
+            <div class="membership bronze">
+                <h2>Bronze Membership</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore autem enim consequatur quae
+                    perferendis ea tenetur fugiat eius hic obcaecati nostrum necessitatibus, blanditiis ipsum
+                    voluptatibus minus, eos voluptas cumque iure? Explicabo eveniet deserunt hic facere nam ipsa vitae
+                    quos, suscipit modi praesentium ea est accusantium! Aliquam ipsam illo reiciendis, nam ducimus
+                    adipisci, corrupti optio perspiciatis ullam quo cum harum quaerat? Nobis doloribus quae sed
+                    incidunt, facilis sit maxime illo temporibus quisquam fugit eum deleniti distinctio rem!
+                    Reprehenderit iste quia eum laudantium odit sapiente illo error, fugit deserunt vitae, placeat,
+                    quasi a quas laborum? Aperiam nostrum quia ipsum autem at maiores.</p>
+            </div>
+            <div class="membership silver">
+                <h2>Silver Membership</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore autem enim consequatur quae
+                    perferendis ea tenetur fugiat eius hic obcaecati nostrum necessitatibus, blanditiis ipsum
+                    voluptatibus minus, eos voluptas cumque iure? Explicabo eveniet deserunt hic facere nam ipsa vitae
+                    quos, suscipit modi praesentium ea est accusantium! Aliquam ipsam illo reiciendis, nam ducimus
+                    adipisci, corrupti optio perspiciatis ullam quo cum harum quaerat? Nobis doloribus quae sed
+                    incidunt, facilis sit maxime illo temporibus quisquam fugit eum deleniti distinctio rem!
+                    Reprehenderit iste quia eum laudantium odit sapiente illo error, fugit deserunt vitae, placeat,
+                    quasi a quas laborum? Aperiam nostrum quia ipsum autem at maiores.</p>
+            </div>
+            <div class="membership gold">
+                <h2>Gold Membership</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore autem enim consequatur quae
+                    perferendis ea tenetur fugiat eius hic obcaecati nostrum necessitatibus, blanditiis ipsum
+                    voluptatibus minus, eos voluptas cumque iure? Explicabo eveniet deserunt hic facere nam ipsa vitae
+                    quos, suscipit modi praesentium ea est accusantium! Aliquam ipsam illo reiciendis, nam ducimus
+                    adipisci, corrupti optio perspiciatis ullam quo cum harum quaerat? Nobis doloribus quae sed
+                    incidunt, facilis sit maxime illo temporibus quisquam fugit eum deleniti distinctio rem!
+                    Reprehenderit iste quia eum laudantium odit sapiente illo error, fugit deserunt vitae, placeat,
+                    quasi a quas laborum? Aperiam nostrum quia ipsum autem at maiores.</p>
+            </div>
+        </section>
     </main>
 
     <footer>
