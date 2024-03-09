@@ -20,6 +20,8 @@ const displayProphets = (prophets) => {
         let card = document.createElement('section');
         let fullName = document.createElement('h2'); // fill in the blank
         let portrait = document.createElement('img');
+        let dob = document.createElement('p');
+        let place = document.createElement('p');
 
         // Build the h2 content out to show the prophet's full name
         fullName.textContent = `${prophet.name} ${prophet.lastname}`; // fill in the blank
@@ -30,9 +32,15 @@ const displayProphets = (prophets) => {
         portrait.setAttribute('width', '340');
         portrait.setAttribute('height', '440');
 
+        dob.textContent = `Date of birth: ${prophet.birthdate}`;
+        place.textContent = `Place of Birth: ${prophet.birthplace}`;
+
         // Append the section(card) with the created elements
         card.appendChild(fullName); //fill in the blank
+        card.appendChild(dob);
+        card.appendChild(place);
         card.appendChild(portrait);
+        
 
         cards.appendChild(card);
     });
