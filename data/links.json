@@ -1,0 +1,35 @@
+{
+    "lessons":
+    [
+        {
+            "lesson":"01",
+            "links":[
+                {
+                "url":"lesson01/holygrail.html",
+                "title": "Grail"
+                },
+                {
+                    "url": "lesson01/mediaquery.html",
+                    "title": "Media Query"
+                }
+            ]
+        },
+        {
+            "lesson":"02",
+            "links":[
+                {
+                    "url":"lesson02/design.html",
+                "title": "Design"
+                },
+                {
+                    "url":"lesson02/menu.html",
+                "title": "Menu"
+                },
+                {
+                    "url":"lesson02/bom.html",
+                "title": "BOM-25"
+                }
+            ]
+        }
+    ]
+}
