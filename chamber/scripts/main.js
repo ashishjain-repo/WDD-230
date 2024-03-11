@@ -61,3 +61,5 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("sidebar").innerText = "LocalStorage is not supported in your browser.";
   }
 });
+
+changePageVisit();
