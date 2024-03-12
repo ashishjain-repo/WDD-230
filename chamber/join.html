@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/larger.css">
     <link rel="stylesheet" href="./styles/join.css">
+
+    <script src="./scripts/join.js" defer></script>
 </head>
 
 <body>
@@ -55,69 +57,69 @@
     </nav>
     <main>
         <section class="membership-form">
-            <form action="thankyou.html" method="get">
+            <form action="thankyou.html" method="get" class="main-form">
 
                 <label for="_firstName">
-                    First Name:
+                    First Name: <br>
                     <input type="text" name="" id="_firstName" required>
                 </label>
 
                 <label for="_lastName">
-                    Last Name:
+                    Last Name: <br>
                     <input type="text" name="" id="_lastName" required>
                 </label>
 
                 <label for="_titlePosition">
-                    Title or Position
+                    Title or Position <br>
                     <input type="text" name="" id="_titlePosition" pattern="[A-Za-z\-\s]{7,}" required>
                 </label>
 
                 <label for="_email">
-                    Email:
+                    Email: <br>
                     <input type="email" name="" id="_email" placeholder="test@email.xyz" title="A valid email address"
                         required>
                 </label>
 
                 <label for="_mobilePhone">
-                    Mobile Phone:
+                    Mobile Phone: <br>
                     <input type="tel" name="" id="_mobilePhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                 </label>
 
                 <label for="_businessName">
-                    Business Name:
+                    Business Name: <br>
                     <input type="text" name="" id="_businessName">
                 </label>
 
                 <p>Membership Level: </p>
                 <label for="_nonProfit">
+                    <input type="radio" name="option" id="_nonProfit" value="np">
                     NP Membership
-                    <input type="radio" name="" id="_nonProfit">
                 </label>
                 <label for="_bronze">
+                    <input type="radio" name="option" id="_bronze" value="bronze">
                     Bronze Membership
-                    <input type="radio" name="" id="_bronze">
                 </label>
                 <label for="_silver">
+                    <input type="radio" name="option" id="_silver" value="silver">
                     Silver Membership
-                    <input type="radio" name="" id="_silver">
                 </label>
                 <label for="_gold">
+                    <input type="radio" name="option" id="_gold" value="gold">
                     Gold Membership
-                    <input type="radio" name="" id="_gold">
                 </label>
 
                 <label for="">
-                    Business Description:
+                    Business Description: <br>
                     <textarea name="" id="" cols="30" rows="3"></textarea>
                 </label>
 
-                <input type="submit" value="">
+                <input type="submit" value="Join" class="submit-button">
 
             </form>
         </section>
 
         <section class="membership-details">
-            <div class="membership np">
+            <div class="membership np" id="np">
                 <h2>Non-Profit Membership</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore autem enim consequatur quae
                     perferendis ea tenetur fugiat eius hic obcaecati nostrum necessitatibus, blanditiis ipsum
