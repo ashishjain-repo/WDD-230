@@ -9,12 +9,16 @@ radioButtons.forEach(function (radioButton) {
         var np = document.getElementsByClassName('.np');
         // Update the display text based on the selected option
         if (selectedOption === 'np') {
+            hide();
             showText(selectedOption);
         } else if (selectedOption === 'bronze') {
+            hide();
             showText(selectedOption);
         } else if (selectedOption === 'silver') {
+            hide();
             showText(selectedOption);
         } else if (selectedOption === 'gold'){
+            hide();
             showText(selectedOption);
         }
     });
@@ -27,5 +31,12 @@ function showText(option)
 }
 function hide()
 {
-    var className = document.getElementsByClassName('membership')
+    var np = document.getElementById('np');
+    var bronze = document.getElementById('bronze');
+    var silver = document.getElementById('silver');
+    var gold = document.getElementById('gold');
+    np.style.display = 'none';
+    bronze.style.display = 'none';
+    silver.style.display = 'none';
+    gold.style.display = 'none';
 }
