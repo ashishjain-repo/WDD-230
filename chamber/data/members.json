@@ -1,0 +1,60 @@
+{
+    "companies": [
+        {
+            "name": "GnomeTech",
+            "address": "123 Gnome Street, Gnomeland",
+            "phone": "555-1234",
+            "website": "https://www.gnometech.com",
+            "level": "NP Membership"
+        },
+        {
+            "name": "GnomeWorks",
+            "address": "456 Gnome Avenue, Gnomeland",
+            "phone": "555-5412",
+            "website": "https://www.gnomeworks.com",
+            "level": "Bronze Membership"
+        },
+        {
+            "name": "GnomeSolutions",
+            "address": "789 Gnome Road, Gnomeland",
+            "phone": "555-9933",
+            "website": "https://www.gnomesolutions.com",
+            "level": "Gold Membership"
+        },
+        {
+            "name": "GnomeIndustries",
+            "address": "321 Gnome Lane, Gnomeland",
+            "phone": "555-3456",
+            "website": "https://www.gnomeindustries.com",
+            "level": "NP Membership"
+        },
+        {
+            "name": "GnomeInnovations",
+            "address": "654 Gnome Boulevard, Gnomeland",
+            "phone": "555-7890",
+            "website": "https://www.gnomeinnovations.com",
+            "level": "Gold Membership"
+        },
+        {
+            "name": "GnomeServices",
+            "address": "987 Gnome Court, Gnomeland",
+            "phone": "555-2345",
+            "website": "https://www.gnomeservices.com",
+            "level": "Silver Membership"
+        },
+        {
+            "name": "GnomeCo",
+            "address": "135 Gnome Circle, Gnomeland",
+            "phone": "555-6789",
+            "website": "https://www.gnomeco.com",
+            "level": "Silver Membership"
+        },
+        {
+            "name": "GnomeTech",
+            "address": "246 Gnome Way, Gnomeland",
+            "phone": "555-0123",
+            "website": "https://www.gnometech.com",
+            "level": "NP Membership"
+        }
+    ]
+}
