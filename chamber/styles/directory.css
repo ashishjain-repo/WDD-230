@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+main{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content min-content;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    align-items: center;
+}
+#DisplayButtons{
+    padding: 2% 0;
+}
+.grid > #Companies > .card{
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    padding: 2% 0;
+    border-radius: 2em;
+    margin-top: 2%;
+    padding: 1% 2%;
+}
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    main{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: max-content min-content;
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+        align-items: center;
+    }
+    #DisplayButtons{
+        padding: 2% 0;
+    }
+    #Companies{
+        display: grid;
+        grid-template-columns: max-content max-content;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        justify-items: center;
+        column-gap: 1em;
+    }
+    .grid > #Companies > .card{
+        width: 15em;
+        height: 8em;
+        text-align: center;
+        border: 1px solid black;
+        padding: 2% 0;
+        border-radius: 2em;
+        margin-top: 2%;
+        padding: 1% 2%;
+    }
+
+
+}
+
+@media (min-width: 769px)
+{
+
+}
