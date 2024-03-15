@@ -15,3 +15,70 @@
     display: none;
 }
 }
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .main-form{
+        display: grid;
+        margin-left: 1%;
+    }    
+    .submit-button{
+        width: max-content;
+        padding: 1% 2%;
+        margin-top: 1%;
+    }
+    .membership{
+        /* display: none; */
+    }
+    .np, .bronze, .silver, .gold{
+        display: none;
+    }
+
+    .membership-details{
+        margin-top: 4%;
+        padding: 0 10%;
+        background-color: #fff;
+        width: 80%;
+        height: max-content;
+        margin-left: 1%;
+    }
+}
+@media (min-width: 769px){
+
+    #form-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content;
+        column-gap: 5%;
+    }
+    .membership-form{
+        margin-left: 1%;
+    }
+    .membership-form label{font-size: 1.5em;}
+
+    .membership-details{
+        margin-top: 4%;
+        padding: 0 10%;
+        background-color: #fff;
+        width: 80%;
+        height: max-content;
+    }
+.membership-details h2{
+font-size: 3em;
+}
+.membership-details p{
+    font-size: 2em;
+    }
+.main-form{
+    display: grid;
+    margin-left: 1%;
+}    
+.submit-button{
+    width: max-content;
+    padding: 1% 2%;
+    margin-top: 1%;
+}
+
+.np, .bronze, .silver, .gold{
+    display: none;
+}
+}
