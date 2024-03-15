@@ -82,7 +82,7 @@
 
                 <label for="_mobilePhone">
                     Mobile Phone: <br>
-                    <input type="tel" name="mobile" id="_mobilePhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <input type="tel" name="mobile" id="_mobilePhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
                 </label>
 
                 <label for="_businessName">
@@ -112,6 +112,8 @@
                     Business Description: <br>
                     <textarea name="bus-desc" id="bus-desc" cols="30" rows="3"></textarea>
                 </label>
+
+                <input type="hidden" name="date" id="date-now">
 
                 <input type="submit" value="Join" class="submit-button">
 

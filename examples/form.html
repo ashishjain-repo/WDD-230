@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style/form.css">
+    <style>
+        /* CSS variables */
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Course Home Page Header</h1>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <h2>Form</h2>
+        <!-- Form -->
+        <form action="record.html" method="get">
+            <!-- Username -->
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <!-- Password -->
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" pattern="^[a-zA-Z0-9]{8,}$" required>
+                <span class="password-error" aria-live="polite"></span>
+            </div>
+
+            <!-- Confirm Password -->
+            <div>
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+                <span class="confirm-password-error" aria-live="polite"></span>
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@byui\.edu$"
+                    title="A valid byui.edu email address.">
+            </div>
+
+            <!-- Page Rating -->
+            <div>
+                <label for="rating">Page Rating:</label>
+                <input type="range" id="rating" name="rating" min="1" max="10" step="1">
+                <output for="rating"></output>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Course Footer</p>
+    </footer>
+
+    <!-- JavaScript to handle password confirmation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var passwordInput = document.getElementById('password');
+            var confirmPasswordInput = document.getElementById('confirm_password');
+            var passwordError = document.querySelector('.password-error');
+            var confirmPasswordError = document.querySelector('.confirm-password-error');
+
+            confirmPasswordInput.addEventListener('input', function () {
+                if (passwordInput.value !== confirmPasswordInput.value) {
+                    confirmPasswordError.textContent = "Passwords do not match.";
+                    confirmPasswordInput.focus();
+                } else {
+                    confirmPasswordError.textContent = "";
+                }
+            });
+
+            passwordInput.addEventListener('input', function () {
+                confirmPasswordError.textContent = ""; // Clear the error when user types in password field
+            });
+        });
+    </script>
+
+</body>
+
+</html>

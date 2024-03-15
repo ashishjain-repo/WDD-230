@@ -28,7 +28,7 @@ function showText(option)
 {
     var elementId = document.getElementById(option);
     elementId.style.display = 'block';
-}
+};
 function hide()
 {
     var np = document.getElementById('np');
@@ -39,4 +39,10 @@ function hide()
     bronze.style.display = 'none';
     silver.style.display = 'none';
     gold.style.display = 'none';
-}
+};
+
+window.onload = function()
+{
+    var hiddenDateTime = document.getElementById('date-now');
+    hiddenDateTime.value = Date.now();
+};
