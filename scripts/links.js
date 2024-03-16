@@ -40,3 +40,19 @@ function generateListItems(data) {
 
 // Call the function to render list items
 renderListItems();
+
+function renderExamplesInUL(examplesData, ulId) {
+    let htmlContent = '';
+
+    examplesData.forEach(function(example) {
+        const url = example.links[0].url;
+        const title = example.links[0].title;
+        htmlContent += `<li><a href="${url}">${title}</a></li>`;
+    });
+
+    const ulElement = document.getElementById(ulId);
+    ulElement.innerHTML = htmlContent;
+}
+
+// Call the function to render examples inside the specific UL element
+renderExamplesInUL(data.examples, 'target-ul');

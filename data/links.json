@@ -68,5 +68,61 @@
                 }
             ]
         }
+    ],
+    "examples":[
+        {
+            "lesson":"1",
+            "links":[
+                {
+                    "url": "lesson01/mediaquery.html",
+                    "title": "DOM Manipulaations"
+                }
+            ]
+        },
+        {
+            "lesson":"2",
+            "links":[
+                {
+                    "url": "lesson01/mediaquery.html",
+                    "title": "javascript Event Handling"
+                }
+            ]
+        },
+        {
+            "lesson":"3",
+            "links":[
+                {
+                    "url": "lesson01/mediaquery.html",
+                    "title": "Responsive Images"
+                }
+            ]
+        },
+        {
+            "lesson":"4",
+            "links":[
+                {
+                    "url": "lesson01/mediaquery.html",
+                    "title": "Lazy Loading"
+                }
+            ]
+        },
+        {
+            "lesson":"5",
+            "links":[
+                {
+                    "url": "lesson01/mediaquery.html",
+                    "title": "Local Storage"
+                }
+            ]
+        },
+        {
+            "lesson":"6",
+            "links":[
+                {
+                    "url": "lesson01/mediaquery.html",
+                    "title": "Form"
+                }
+            ]
+        }
     ]
 }
