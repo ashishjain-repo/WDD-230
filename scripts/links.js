@@ -1,11 +1,42 @@
 const baseURL = "https://ashishjain-repo.github.io/wdd230/";
 const linksURL = "https://ashishjain-repo.github.io/wdd230/data/links.json";
 
-async function getLinks() 
-{
+async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    console.log(data);
+    return data;
 }
 
-getLinks();
+async function renderListItems() {
+    const jsonData = await getLinks();
+    const listItems = generateListItems(jsonData);
+    const lessonList = document.getElementById("lesson-list");
+    lessonList.innerHTML = listItems;
+}
+
+function generateListItems(data) {
+    var listItems = "";
+
+    data.lessons.forEach(function(lesson) {
+        var lessonNum = lesson.lesson;
+        var linksHtml = "";
+
+        lesson.links.forEach(function(link, index) {
+            var url = link.url;
+            var title = link.title;
+
+            if (index === 0) {
+                linksHtml += '<a href="' + url + '">' + title + '</a>';
+            } else {
+                linksHtml += ' | <a href="' + url + '">' + title + '</a>';
+            }
+        });
+
+        listItems += '<li>Week ' + lessonNum + ' ' + linksHtml + '</li>';
+    });
+
+    return listItems;
+}
+
+// Call the function to render list items
+renderListItems();

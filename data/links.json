@@ -5,12 +5,8 @@
             "lesson":"01",
             "links":[
                 {
-                "url":"lesson01/holygrail.html",
-                "title": "Grail"
-                },
-                {
                     "url": "lesson01/mediaquery.html",
-                    "title": "Media Query"
+                    "title": "Media Queries"
                 }
             ]
         },
@@ -19,15 +15,56 @@
             "links":[
                 {
                     "url":"lesson02/design.html",
-                "title": "Design"
+                "title": "Design Principles"
                 },
                 {
                     "url":"lesson02/menu.html",
-                "title": "Menu"
-                },
+                "title": "CSS Selector Rules"
+                }
+            ]
+        },
+        {
+            "lesson":"03",
+            "links":[
                 {
-                    "url":"lesson02/bom.html",
-                "title": "BOM-25"
+                    "url": "lesson01/mediaquery.html",
+                    "title": "Chamber Site Plan"
+                }
+            ]
+        },
+        {
+            "lesson":"05",
+            "links":[
+                {
+                    "url": "lesson01/mediaquery.html",
+                    "title": "Book of Mormon Chapters"
+                }
+            ]
+        },
+        {
+            "lesson":"08",
+            "links":[
+                {
+                    "url": "lesson01/mediaquery.html",
+                    "title": "Table Build"
+                }
+            ]
+        },
+        {
+            "lesson":"09",
+            "links":[
+                {
+                    "url": "lesson01/mediaquery.html",
+                    "title": "Prophet Cards"
+                }
+            ]
+        },
+        {
+            "lesson":"10",
+            "links":[
+                {
+                    "url": "lesson01/mediaquery.html",
+                    "title": "Weather"
                 }
             ]
         }
