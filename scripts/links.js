@@ -1,6 +1,7 @@
 const baseURL = "https://ashishjain-repo.github.io/wdd230/";
 const linksURL = "https://ashishjain-repo.github.io/wdd230/data/links.json";
 
+
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
@@ -41,7 +42,14 @@ function generateListItems(data) {
 // Call the function to render list items
 renderListItems();
 
-function renderExamplesInUL(examplesData, ulId) {
+async function renderExamplesInUL() {
+    const jsonData = await getLinks();
+    const examplesData = jsonData.examples;
+    const ulId = 'target-ul'; // Change this to the appropriate UL ID
+    renderExamples(examplesData, ulId);
+}
+
+function renderExamples(examplesData, ulId) {
     let htmlContent = '';
 
     examplesData.forEach(function(example) {
@@ -53,6 +61,4 @@ function renderExamplesInUL(examplesData, ulId) {
     const ulElement = document.getElementById(ulId);
     ulElement.innerHTML = htmlContent;
 }
-
-// Call the function to render examples inside the specific UL element
-renderExamplesInUL(data.examples, 'target-ul');
+renderExamplesInUL();
