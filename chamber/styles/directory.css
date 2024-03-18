@@ -5,7 +5,17 @@
 }
 
 
-
+.list > #Companies > .card:nth-child(even)
+{
+    background-color: #fff;
+    color: black;
+}
+.list > #Companies > .card a{
+color: black;
+}
+.grid > #Companies > .card{
+    background-color: #d6cfc0;
+}
 
 @media only screen and (max-width: 480px) {
 main{
@@ -29,6 +39,15 @@ main{
     margin-top: 2%;
     padding: 1% 2%;
 }
+.list > #Companies > .card{
+    width: 90vw;
+    text-align: left;
+    background-color: var(--box1Color);
+    color: white;
+    padding: 2% 0;
+    padding-left: 1%;
+}
+
 
 }
 
@@ -45,7 +64,7 @@ main{
     #DisplayButtons{
         padding: 2% 0;
     }
-    #Companies{
+    .grid > #Companies{
         display: grid;
         grid-template-columns: max-content max-content;
         justify-content: center;
@@ -65,10 +84,62 @@ main{
         padding: 1% 2%;
     }
 
+    .list > #Companies{
 
+    }
+    .list > #Companies > .card{
+        width: 90vw;
+        text-align: left;
+        background-color: var(--box1Color);
+        color: white;
+        padding: 2% 0;
+        padding-left: 1%;
+    }
 }
 
 @media (min-width: 769px)
 {
-
+    main{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: max-content min-content;
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+        align-items: center;
+    }
+    #DisplayButtons{
+        padding: 2% 0;
+    }
+    .grid > #Companies{
+        display: grid;
+        grid-template-columns: max-content max-content max-content;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        justify-items: center;
+        column-gap: 1em;
+    }
+    .grid > #Companies > .card{
+        width: 15em;
+        height: 8em;
+        text-align: center;
+        border: 1px solid black;
+        padding: 2% 0;
+        border-radius: 2em;
+        margin-top: 2%;
+        padding: 1% 2%;
+    }
+    .list > #Companies > .card{
+        display: flex;
+        justify-content: space-around;
+    }
+    .list > #Companies > .card{
+    width: 90vw;
+    text-align: left;
+    background-color: var(--box1Color);
+    color: white;
+    padding: 2% 0;
+    padding-left: 1%;
+}
 }
