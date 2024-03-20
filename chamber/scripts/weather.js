@@ -8,7 +8,6 @@ async function getWeather()
         if(response.ok)
         {
             const data = await response.json();
-            console.log(data);
             var weather = document.getElementById('current-temp');
             weather.innerText = data.main.temp;
             const iconCode = data.weather[0].icon;
