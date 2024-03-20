@@ -263,7 +263,12 @@ main > .content-box2{
 /* footer content only */
 
 
-
-
-
-  }
+}
+.weathers{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+}
+.weathers div img{
+    width: 25%;
+}
