@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/larger.css">
+
+    <script src="./scripts/weather.js"></script>
 </head>
 
 <body>
@@ -67,9 +69,11 @@
             </div>
             <div class="box2">
                 <h2>Weather</h2>
-                <img src="./images/sun.png" alt="Sunny - weather image" title="Sunny Weather">
-                <p><b>Temperature: </b>-3&deg;</p>
-                <p><b>Wind Chill: </b>10 km/h</p>
+                <img src="./images/sun.png" alt="Sunny - weather image" title="Sunny Weather" id="weather-icon">
+                <p><b>Temperature: </b><span id="current-temp"></span>&deg; C</p>
+                <p><b id="figcaption"></b></p>
+                <p><b>Wind Chill: </b><span id="windChill"></span></p>
+                <p><b>Windspeed: </b><span id="windSpeed"></span>Km/h</p>
             </div>
         </div>
         <div class="content-box2">
