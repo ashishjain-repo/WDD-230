@@ -35,14 +35,34 @@
     --navLinksFont: "Dancing Script"
   }
   .banner {
-    display: none; /* Initially hide the banner */
+    display: none; 
     background-color: #4CAF50;
     color: white;
     text-align: center;
     padding: 10px;
-}
+    position: relative;
+  }
+
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    color: red;
+  }
+
+  .banner p {
+    display: inline;
+    position: relative; 
+  }
+
+  .banner p .close {
+    position: absolute; 
+    top: 0;
+    left: 101%;
+  }
 @media only screen and (max-width: 480px) {
-    /* Your CSS rules for mobile devices */
+    
 
     body{
         background-color: var(--bgColor);
