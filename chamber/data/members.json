@@ -5,56 +5,64 @@
             "address": "35 N. 1st E, Ste 3",
             "phone": "356-5009",
             "website": "https://www.rabcenter.com",
-            "level": "NP Membership"
+            "level": "NP Membership",
+            "url":"https://rbdcenter.org/wp-content/uploads/2023/09/RBDC-Square-1.png"
         },
         {
             "name": "Sapein Designs",
             "address": "50 Collage Ave Suite 101",
             "phone": "932-7287",
             "website": "https://www.sapein.com",
-            "level": "Bronze Membership"
+            "level": "Bronze Membership",
+            "url":"https://sapiendesigns.com/images/logo-white.svg"
         },
         {
             "name": "Yesco",
             "address": "1530 W Sunnyside",
             "phone": "522-7558",
             "website": "https://www.yesco.com",
-            "level": "Gold Membership"
+            "level": "Gold Membership",
+            "url":"https://www.yesco.com/wp-content/uploads/2021/08/YESCO-logo.png"
         },
         {
             "name": "Arnold Press",
             "address": "206 E Main St.",
             "phone": "356-3020",
             "website": "https://www.arnoldp.com",
-            "level": "NP Membership"
+            "level": "NP Membership",
+            "url":"https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/300410615_174532871751443_159092027417381252_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=3EZeYQGph9MAX9azrDq&_nc_ht=scontent-lax3-2.xx&oh=00_AfApINI7zWqJMGnPulLBuAoCXvPfEYFJBd-e5Mfmf-QOuQ&oe=6601A42E"
         },
         {
             "name": "DTM Film",
             "address": "654 Rex Boulevard",
             "phone": "206-5880",
             "website": "https://www.dtm.com",
-            "level": "Gold Membership"
+            "level": "Gold Membership",
+            "url":"https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/uhDzHy7pQjsglPTkcoF3/media/6563fd2730249674d206a2e6.png"
         },
         {
             "name": "Kettle",
             "address": "61 E Main St",
             "phone": "656-9993",
             "website": "https://www.kettle.com",
-            "level": "Silver Membership"
+            "level": "Silver Membership",
+            "url":"https://kettleembroidery.com/wp-content/uploads/2022/05/EKE-White-Grey-Red-1.png"
         },
         {
             "name": "Premier Fabrication",
             "address": "115 N 2nd W",
             "phone": "356-3263",
             "website": "https://www.fab-premier.com",
-            "level": "Silver Membership"
+            "level": "Silver Membership",
+            "url":"https://www.ppccfab.com/wp-content/uploads/logo.png"
         },
         {
             "name": "Prismatic Branding",
             "address": "101 E Main St",
             "phone": "390-4292",
             "website": "https://www.primastic.com",
-            "level": "NP Membership"
-        }
+            "level": "NP Membership",
+            "url":"https://www.prismatic-branding.com/we/we.dll/Pic?UN=255951&F=C&T=801&Age=1467059032"
+                }
     ]
 }
