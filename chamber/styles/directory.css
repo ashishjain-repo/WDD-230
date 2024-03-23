@@ -16,7 +16,14 @@ color: black;
 .grid > #Companies > .card{
     background-color: #d6cfc0;
 }
-
+.grid img{
+    width: 7vw;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.list img{
+    display: none;
+}
 @media only screen and (max-width: 480px) {
 main{
     display: grid;
@@ -37,7 +44,7 @@ main{
     padding: 2% 0;
     border-radius: 2em;
     margin-top: 2%;
-    padding: 1% 2%;
+    padding: 2% 2%;
 }
 .list > #Companies > .card{
     width: 90vw;
@@ -75,7 +82,7 @@ main{
     }
     .grid > #Companies > .card{
         width: 15em;
-        height: 8em;
+        height: 12em;
         text-align: center;
         border: 1px solid black;
         padding: 2% 0;
@@ -122,13 +129,16 @@ main{
     }
     .grid > #Companies > .card{
         width: 15em;
-        height: 8em;
+        height: 12em;
         text-align: center;
         border: 1px solid black;
         padding: 2% 0;
         border-radius: 2em;
         margin-top: 2%;
         padding: 1% 2%;
+    }
+    .grid img{
+        width: 4vw;
     }
     .list > #Companies > .card{
         display: flex;
