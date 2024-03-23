@@ -14,6 +14,7 @@ async function getCompanies() {
             <p>${company.phone}</p>
             <p>${company.level}</p>
             <a href="${company.website}" target="_blank">Visit Website</a>
+            <img src="${company.url}" alt="${company.name} Company Logo">
         `;
         container.appendChild(card);
     });
