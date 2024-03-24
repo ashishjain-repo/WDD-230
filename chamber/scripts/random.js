@@ -33,7 +33,7 @@ function changeDivContent(companies) {
             <!-- <a href="mailto:${company.email}">${company.email}</a> -->
             <p>${company.level}</p>
             <p>${company.phone}</p>
-            <a href="${company.website}" target="_blank">${company.website}</a>
+            <a href="${company.website}" target="_blank">${company.name}</a>
         `;
     }
 }
