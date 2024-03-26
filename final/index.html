@@ -25,7 +25,7 @@
     <!-- Javascript Only-->
     <script src="./scripts/weather.js"></script>
     <script src="./scripts/hourly.js"></script>
-    <script src="./scripts/main.js"></script>
+    <script src="./scripts/main.js" defer></script>
     <!-- Javascript Only-->
 
     <title>Bountiful Foods | [Home]</title>
@@ -76,7 +76,7 @@
             <a href="./order.html">Build My Drink!</a>
         </div>
         <div class="drink-counter">
-            <img src="./images/counter-bg.webp" alt="">
+            <img src="./images/counter.webp" alt="">
             <p>You didn't build any drink yet!<span class="drink-counts"></span></p>
         </div>
         <div class="weather-box">
@@ -118,7 +118,7 @@
         <div class="copyright-content">
             <p>&copy; <span class="current-year"></span> Bountiful Foods</p>
             <p>Ashish Jain</p>
-            <p>Last Modified: <span class="last-modified"></span></p>
+            <p>Last Modified: <span id="last-modified"></span></p>
         </div>
     </footer>
 </body>

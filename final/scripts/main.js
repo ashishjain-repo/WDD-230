@@ -4,3 +4,6 @@ function toggleMenu() {
     navbar.style.display = (navbar.style.display === 'none' || navbar.style.display === '') ? 'block' : 'none';
 }
 // Menu Button Toggle Function
+
+
+document.getElementById('last-modified').textContent = document.lastModified;
