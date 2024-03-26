@@ -227,5 +227,11 @@
     {
         margin: 1% 0;
     }
+    .disclaimer
+    {
+        border-top: 1px solid;
+        font-size: 50%;
+        text-align: center;
+    }
     /* Footer */
 }
