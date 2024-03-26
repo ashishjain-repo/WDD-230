@@ -58,8 +58,9 @@
     .menu-button button
     {
         width: 100vw;
-        height: 5vh;
+        height: 6vh;
         font-size: xx-large;
+        border-radius: 0;
     }
     /* Header */
 
@@ -96,5 +97,74 @@
     /* Please use elements in order*/
     
     /* Main */
+    .about
+    {
+        margin: 3% 2%;
+        border: 1px solid;
+        margin-top: 5%;
+    }
+    .about > .about-title
+    {
+        text-align: center;
+        margin: 2% 0;
+    }
+    .about > .about-para
+    {
+        border: 1px solid;
+        margin: 2% 2%;
+        margin-bottom: 4%;
+        padding: 1%;
+    }
+    .hero-image
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        align-items: center;
+        justify-items: center;
+        margin: 3% 2%;
+    }
+
+    .hero-image > img
+    {
+        grid-column: 1/4;
+        grid-row: 1/4;
+        max-width: 100%;
+        width: 100%;
+    }
+    .hero-image > h1
+    {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    .hero-image > a
+    {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .drink-counter
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        align-items: center;
+        justify-items: center;
+        margin: 3% 2%;
+        
+    }
+    .drink-counter > img
+    {
+        max-width: 100%;
+        width: 100%;
+        grid-column: 1/4;
+        grid-row: 1/4;
+    }
+    .drink-counter > p
+    {
+        grid-column: 1/4;
+        grid-row: 1;
+    }
+
 
 }
