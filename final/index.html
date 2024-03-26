@@ -12,9 +12,16 @@
     <meta property="og:image" content="https://ashishjain-repo.github.io/wdd230/chamber/images/logo.webp">
     <meta property="og:url" content="ashishjain-repo.github.io/wdd230">
 
+    <!-- CSS Only -->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <!-- CSS Only-->
+
+    <!-- Javascript Only-->
     <script src="./scripts/weather.js"></script>
     <script src="./scripts/hourly.js"></script>
     <script src="./scripts/main.js"></script>
+    <!-- Javascript Only-->
     
     <title>Document</title>
 </head>
@@ -28,6 +35,9 @@
 <body>
     <header>
         <div class="main-heading">
+            <div class="logo">
+                <a href="https://ashishjain-repo/wdd230/final/"><img src="./images/main-icon.png" alt=""></a>
+            </div>
             <div class="heading">
             <h1>Bountiful Foods</h1>
         </div>
@@ -42,22 +52,28 @@
         </div>
     </header>
     <nav id="navbar">
-        <ul><li><a href="">Home</a></li></ul>
-        <ul><li><a href="">Order</a></li></ul>
-        <ul><li><a href="">About Us</a></li></ul>
+        <ul><li><a href="./index.html">Home</a></li></ul>
+        <ul><li><a href="./order.html">Order</a></li></ul>
+        <ul><li><a href="./about.html">About Us</a></li></ul>
     </nav>
     <main>
         <div class="hero-image">
             <img src="./images/hero.webp" alt="Fruit Stand">
-            <a href="./order.html">Order Now!</a>
+            <h1>Build Your Drink!</h1>
+            <a href="./order.html">Build My Drink!</a>
         </div>
-        <div class="weather-box">
+        <div class="drink-counter">
+
+        </div>
+        <!-- <div class="weather-box"> -->
+            <div class="current-weather">
             <h2>Weather</h2>
             <img src="" alt="Current Weather Image" title="Current Weather" id="weather-icon">
             <p><b>Temperature: </b><span id="current-temp"></span>&deg; C</p>
             <p><b id="figcaption"></b></p>
             <p><b>Wind Chill: </b><span id="windChill"></span></p>
             <p><b>Windspeed: </b><span id="windSpeed"></span>Km/h</p>
+        </div>
             <div class="weathers">
                 <div class="weather-1">
                     <img src="" alt="One day from today Forecast" id="weather-1-img">
@@ -78,9 +94,17 @@
                     <p id="weather-3-date"></p>
                 </div>
             </div>
-        </div>
 
     </main>
-    <footer></footer>
+    <footer>
+        <div class="company-content">
+
+        </div>
+        <div class="copyright-content">
+            <p>&copy; <span class="current-year"></span> Bountiful Foods</p>
+            <p>Ashish Jain</p>
+            <p>Last Modified: <span class="last-modified"></span></p>
+        </div>
+    </footer>
 </body>
 </html>
