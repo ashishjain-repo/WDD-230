@@ -65,25 +65,30 @@
 
     /* Navigation */
     /* Please use elements in order*/
+    #navbar
+    {
+        display: none;
+    }
     nav
     {
-        
         text-align: center;
-        display: hidden;
     }
     nav ul
     {
         padding: 2% 0;
         border: 1px solid;
+     
     }
     nav ul li
     {
         list-style: none;
+     
         
     }
     nav ul li a
     {
         text-decoration: none;
+    display: block;
     }
     /* Navigation */
 
