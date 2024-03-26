@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,41 +27,57 @@
     <script src="./scripts/hourly.js"></script>
     <script src="./scripts/main.js"></script>
     <!-- Javascript Only-->
-    
+
     <title>Bountiful Foods | [Home]</title>
 </head>
 <style>
-    *{
+    * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
     }
 </style>
+
 <body>
     <header>
         <div class="main-heading">
             <div class="logo">
-                <a href="https://ashishjain-repo.github.io/wdd230/final/" target="_blank"><img src="./images/main-icon.png" alt=""></a>
+                <a href="https://ashishjain-repo.github.io/wdd230/final/" target="_blank"><img
+                        src="./images/main-icon.png" alt=""></a>
             </div>
             <div class="heading">
-            <h1>Bountiful Foods</h1>
-        </div>
-        <div class="socials">
-            <a href=""><img src="./images/social/facebook.webp" alt=""></a>
-            <a href=""><img src="./images/social/instagram.webp" alt=""></a>
-            <a href=""><img src="./images/social/twitterx.webp" alt=""></a>
-        </div>
-        <div class="menu-button">
-        <button onclick="toggleMenu()" id="menu">☰</button>
-    </div>
+                <h1>Bountiful Foods</h1>
+            </div>
+            <div class="socials">
+                <a href=""><img src="./images/social/facebook.webp" alt=""></a>
+                <a href=""><img src="./images/social/instagram.webp" alt=""></a>
+                <a href=""><img src="./images/social/twitterx.webp" alt=""></a>
+            </div>
+            <div class="menu-button">
+                <button onclick="toggleMenu()" id="menu">☰</button>
+            </div>
         </div>
     </header>
     <nav id="navbar">
-        <ul><li><a href="./index.html">Home</a></li></ul>
-        <ul><li><a href="./order.html">Order</a></li></ul>
-        <ul><li><a href="./about.html">About Us</a></li></ul>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+        </ul>
+        <ul>
+            <li><a href="./order.html">Order</a></li>
+        </ul>
+        <ul>
+            <li><a href="./about.html">About Us</a></li>
+        </ul>
     </nav>
     <main>
+        <div class="about">
+            <p class="about-title">About Carlsbad!</p>
+            <p class="about-para">The city is a scenic coastal city known for its beautiful beaches, mild climate, and
+                attractions like LEGOLAND and the Flower Fields. With seven miles of sandy shoreline, it's a popular
+                destination for sunbathing, surfing, and enjoying breathtaking sunsets. The city also offers a vibrant
+                arts and culture scene, outdoor activities like hiking and birdwatching, and is home to the Museum of
+                Making Music. And of course, the best place to buy your food!</p>
+        </div>
         <div class="hero-image">
             <img src="./images/hero.webp" alt="Fruit Stand">
             <h1>Build Your Drink!</h1>
@@ -69,8 +86,8 @@
         <div class="drink-counter">
             <img src="./images/counter-bg.webp" alt="">
         </div>
-        <!-- <div class="weather-box"> -->
-            <div class="current-weather">
+        <div class="weather-box">
+        <div class="current-weather">
             <h2>Weather</h2>
             <img src="" alt="Current Weather Image" title="Current Weather" id="weather-icon">
             <p><b>Temperature: </b><span id="current-temp"></span>&deg; C</p>
@@ -78,26 +95,27 @@
             <p><b>Wind Chill: </b><span id="windChill"></span></p>
             <p><b>Windspeed: </b><span id="windSpeed"></span>Km/h</p>
         </div>
-            <div class="weathers">
-                <div class="weather-1">
-                    <img src="" alt="One day from today Forecast" id="weather-1-img">
-                    <p><span id="weather-1-temp"></span>&deg;C<span></span></p>
-                    <p id="weather-1-desc"></p>
-                    <p id="weather-1-date"></p>
-                </div>
-                <div class="weather-2">
-                    <img src="" alt="Two days from today Forecast" id="weather-2-img">
-                    <p><span id="weather-2-temp"></span>&deg;C<span></span></p>
-                    <p id="weather-2-desc"></p>
-                    <p id="weather-2-date"></p>
-                </div>
-                <div class="weather-3">
-                    <img src="" alt="Three days from today Forecast" id="weather-3-img">
-                    <p><span id="weather-3-temp"></span>&deg;C<span></span></p>
-                    <p id="weather-3-desc"></p>
-                    <p id="weather-3-date"></p>
-                </div>
+        <div class="weathers">
+            <div class="weather-1">
+                <img src="" alt="One day from today Forecast" id="weather-1-img">
+                <p><span id="weather-1-temp"></span>&deg;C<span></span></p>
+                <p id="weather-1-desc"></p>
+                <p id="weather-1-date"></p>
             </div>
+            <div class="weather-2">
+                <img src="" alt="Two days from today Forecast" id="weather-2-img">
+                <p><span id="weather-2-temp"></span>&deg;C<span></span></p>
+                <p id="weather-2-desc"></p>
+                <p id="weather-2-date"></p>
+            </div>
+            <div class="weather-3">
+                <img src="" alt="Three days from today Forecast" id="weather-3-img">
+                <p><span id="weather-3-temp"></span>&deg;C<span></span></p>
+                <p id="weather-3-desc"></p>
+                <p id="weather-3-date"></p>
+            </div>
+        </div>
+    </div>
 
     </main>
     <footer>
@@ -111,4 +129,5 @@
         </div>
     </footer>
 </body>
+
 </html>

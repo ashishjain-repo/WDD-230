@@ -1,0 +1,76 @@
+/* Google Fonts */
+/* Google Fonts */
+
+/* Universal */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Universal */
+
+/* Variables */
+/* Variables */
+
+@media only screen and (max-width: 480px) 
+{
+    /* Header */
+    /* Please use elements in order*/
+    .main-heading 
+    {
+        display: grid;
+        grid-template-columns: 20% 40% 40%;
+        grid-template-rows: max-content max-content;
+        align-items: center;
+        text-align: center;
+
+    }
+    .logo
+    {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .logo img
+    {
+        width: 60%;
+    }
+    .heading
+    {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .socials
+    {
+        grid-column: 3/3;
+        grid-row: 1/2;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .socials img{
+        width: 60%;
+    }
+    .menu-button
+    {
+        grid-column: 1/3;
+        grid-row: 2/2;
+    }
+    .menu-button button
+    {
+        width: 100vw;
+        height: 5vh;
+        font-size: xx-large;
+    }
+    /* Header */
+
+    /* Navigation */
+    nav
+    {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    /* Navigation */
+
+}
