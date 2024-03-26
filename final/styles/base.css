@@ -64,13 +64,32 @@
     /* Header */
 
     /* Navigation */
+    /* Please use elements in order*/
     nav
     {
-        display: grid;
-        align-items: center;
-        justify-content: center;
+        
         text-align: center;
+        display: hidden;
+    }
+    nav ul
+    {
+        padding: 2% 0;
+        border: 1px solid;
+    }
+    nav ul li
+    {
+        list-style: none;
+        
+    }
+    nav ul li a
+    {
+        text-decoration: none;
     }
     /* Navigation */
+
+    /* Main */
+    /* Please use elements in order*/
+    
+    /* Main */
 
 }
