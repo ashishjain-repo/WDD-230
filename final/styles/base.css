@@ -40,6 +40,10 @@
         grid-column: 2/3;
         grid-row: 1/2;
     }
+    .heading h1
+    {
+        font-size: 110%;
+    }
     .socials
     {
         grid-column: 3/3;
@@ -58,7 +62,7 @@
     .menu-button button
     {
         width: 100vw;
-        height: 6vh;
+        height: 100%;
         font-size: xx-large;
         border-radius: 0;
     }
@@ -124,7 +128,7 @@
         justify-items: center;
         margin: 3% 2%;
     }
-
+    
     .hero-image > img
     {
         grid-column: 1/4;
@@ -142,7 +146,7 @@
         grid-column: 2;
         grid-row: 2;
     }
-
+    
     .drink-counter
     {
         display: grid;
@@ -165,6 +169,63 @@
         grid-column: 1/4;
         grid-row: 1;
     }
+    
+    .weather-box
+    {
+        margin: 3% 2%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, max-content);
+        border: 1px solid;
+    }
+    .weather-title
+    {
+        text-align: center;
+        margin: 2% 0;
+    }
+    .current-weather
+    {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        border: 1px solid;
+        margin: 1% 2%;
+    }
+    .weathers
+    {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        border: 1px solid;
+        margin: 1% 2%;
+        margin-bottom: 3%;
+        
+    }
+    
+    /* Footer */
+    /* Please use elements in order*/
+    footer
+    {
+        border: 1px solid;
+    }
+    .company-content
+    {
+        text-align: center;
+    }
+    .company-content h3,a,p
+    {
+        margin: 1% 0;
+    }
+    .copyright-content
+    {
+        text-align: center;
+        border-top: 1px dotted;
+        margin: 1% 0;
 
-
+    }
+    .copyright-content p
+    {
+        margin: 1% 0;
+    }
+    /* Footer */
 }

@@ -32,7 +32,7 @@ async function getHourlyWeather()
             const temp1 = document.getElementById('weather-1-temp');
             temp1.textContent = data.list[1].main.temp;
             const desc1 = document.getElementById('weather-1-desc');
-            desc1.textContent = data.list[1].weather[0].description;
+            desc1.textContent = data.list[1].weather[0].description.toUpperCase();
             const date1 = document.getElementById('weather-1-date');
             date1.textContent = increaseCurrentDateBy(1);
 
@@ -44,7 +44,7 @@ async function getHourlyWeather()
             const temp2 = document.getElementById('weather-2-temp');
             temp2.textContent = data.list[2].main.temp;
             const desc2 = document.getElementById('weather-2-desc');
-            desc2.textContent = data.list[2].weather[0].description;
+            desc2.textContent = data.list[2].weather[0].description.toUpperCase();
             const date2 = document.getElementById('weather-2-date');
             date2.textContent = increaseCurrentDateBy(2);
 
@@ -56,7 +56,7 @@ async function getHourlyWeather()
             const temp3 = document.getElementById('weather-3-temp');
             temp3.textContent = data.list[3].main.temp;
             const desc3 = document.getElementById('weather-3-desc');
-            desc3.textContent = data.list[3].weather[0].description;
+            desc3.textContent = data.list[3].weather[0].description.toUpperCase();
             const date3 = document.getElementById('weather-3-date');
             date3.textContent = increaseCurrentDateBy(3);
         }

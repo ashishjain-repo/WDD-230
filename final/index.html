@@ -30,6 +30,7 @@
 
     <title>Bountiful Foods | [Home]</title>
 </head>
+
 <body>
     <header>
         <div class="main-heading">
@@ -65,8 +66,10 @@
         <div class="about">
             <p class="about-title">About Carlsbad!</p>
             <p class="about-para">The city is a scenic coastal city known for its beautiful beaches, mild climate, and
-                attractions like <b>LEGOLAND</b> and the <b>Flower Fields</b>. With seven miles of sandy shoreline, it's a popular
-                destination for <b>sunbathing</b>, <b>surfing</b>, and enjoying <b>breathtaking sunsets</b>. The city also offers a vibrant
+                attractions like <b>LEGOLAND</b> and the <b>Flower Fields</b>. With seven miles of sandy shoreline, it's
+                a popular
+                destination for <b>sunbathing</b>, <b>surfing</b>, and enjoying <b>breathtaking sunsets</b>. The city
+                also offers a vibrant
                 arts and culture scene, outdoor activities like hiking and birdwatching, and is home to the Museum of
                 Making Music. And of course, <b>the best place to buy your food!</b></p>
         </div>
@@ -80,43 +83,49 @@
             <p>You didn't build any drink yet!<span class="drink-counts"></span></p>
         </div>
         <div class="weather-box">
-        <div class="current-weather">
-            <h2>Weather</h2>
-            <img src="./images/placeholder-weather.png" alt="Current Weather Image" title="Current Weather" id="weather-icon">
-            <p><b>Temperature: </b><span id="current-temp"></span>&deg; C</p>
-            <p><b id="figcaption"></b></p>
-            <p><b>Wind Chill: </b><span id="windChill"></span></p>
-            <p><b>Windspeed: </b><span id="windSpeed"></span>Km/h</p>
+            <div class="weather-title">
+            <h2>Carlsbad Weather</h2>
         </div>
-        <div class="weathers">
-            <div class="weather-1">
-                <img src="./images/placeholder-weather.png" alt="One day from today Forecast" id="weather-1-img">
-                <p><span id="weather-1-temp"></span>&deg;C<span></span></p>
-                <p id="weather-1-desc"></p>
-                <p id="weather-1-date"></p>
+            <div class="current-weather">
+                <img src="./images/placeholder-weather.png" alt="Current Weather Image" title="Current Weather"
+                    id="weather-icon">
+                <p><b>Temperature: </b><span id="current-temp"></span>&deg; C</p>
+                <p><b id="figcaption"></b></p>
+                <p><b>Wind Chill: </b><span id="windChill"></span></p>
+                <p><b>Windspeed: </b><span id="windSpeed"></span>Km/h</p>
             </div>
-            <div class="weather-2">
-                <img src="./images/placeholder-weather.png" alt="Two days from today Forecast" id="weather-2-img">
-                <p><span id="weather-2-temp"></span>&deg;C<span></span></p>
-                <p id="weather-2-desc"></p>
-                <p id="weather-2-date"></p>
-            </div>
-            <div class="weather-3">
-                <img src="./images/placeholder-weather.png" alt="Three days from today Forecast" id="weather-3-img">
-                <p><span id="weather-3-temp"></span>&deg;C<span></span></p>
-                <p id="weather-3-desc"></p>
-                <p id="weather-3-date"></p>
+            <div class="weathers">
+                <div class="weather-1">
+                    <img src="./images/placeholder-weather.png" alt="One day from today Forecast" id="weather-1-img">
+                    <p><span id="weather-1-temp"></span>&deg;C<span></span></p>
+                    <p id="weather-1-desc"></p>
+                    <p id="weather-1-date"></p>
+                </div>
+                <div class="weather-2">
+                    <img src="./images/placeholder-weather.png" alt="Two days from today Forecast" id="weather-2-img">
+                    <p><span id="weather-2-temp"></span>&deg;C<span></span></p>
+                    <p id="weather-2-desc"></p>
+                    <p id="weather-2-date"></p>
+                </div>
+                <div class="weather-3">
+                    <img src="./images/placeholder-weather.png" alt="Three days from today Forecast" id="weather-3-img">
+                    <p><span id="weather-3-temp"></span>&deg;C<span></span></p>
+                    <p id="weather-3-desc"></p>
+                    <p id="weather-3-date"></p>
+                </div>
             </div>
         </div>
-    </div>
 
     </main>
     <footer>
         <div class="company-content">
-
+            <h3>Bountiful Foods</h3>
+            <a href="">Our Address</a>
+            <p>contact@bountifulfoods.com</p>
+            <p>(123) 465-7890</p>
         </div>
         <div class="copyright-content">
-            <p>&copy; <span class="current-year"></span> Bountiful Foods</p>
+            <p>&copy; <span id="current-year"></span> Bountiful Foods</p>
             <p>Ashish Jain</p>
             <p>Last Modified: <span id="last-modified"></span></p>
         </div>

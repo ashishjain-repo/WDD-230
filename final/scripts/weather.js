@@ -15,7 +15,7 @@ async function getWeather()
             var icon = document.getElementById('weather-icon');
             icon.src = iconUrl;
             var desc = document.getElementById('figcaption');
-            desc.textContent= data.weather[0].description;
+            desc.textContent= data.weather[0].description.toUpperCase();
             var windChill = document.getElementById('windChill');
             windChill.textContent = data.wind.deg;
             var windSpeed = document.getElementById('windSpeed');
