@@ -50,6 +50,7 @@
     .logo img
     {
         width: 60%;
+        filter: contrast(200%);
     }
     .heading
     {
