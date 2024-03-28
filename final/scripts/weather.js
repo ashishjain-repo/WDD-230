@@ -10,16 +10,18 @@ async function getWeather()
             const data = await response.json();
             var weather = document.getElementById('current-temp');
             weather.innerText = data.main.temp;
+            var humidity = document.getElementById('humidity');
+            humidity.innerText = data.main.humidity;
             const iconCode = data.weather[0].icon;
             const iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
             var icon = document.getElementById('weather-icon');
             icon.src = iconUrl;
             var desc = document.getElementById('figcaption');
             desc.textContent= data.weather[0].description.toUpperCase();
-            var windChill = document.getElementById('windChill');
-            windChill.textContent = data.wind.deg;
-            var windSpeed = document.getElementById('windSpeed');
-            windSpeed.textContent = data.wind.speed;
+            // var windChill = document.getElementById('windChill');
+            // windChill.textContent = data.wind.deg;
+            // var windSpeed = document.getElementById('windSpeed');
+            // windSpeed.textContent = data.wind.speed;
         }
         else
         {
