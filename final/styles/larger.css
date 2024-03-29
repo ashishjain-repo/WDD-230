@@ -1,37 +1,11 @@
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-/* Google Fonts */
-
-/* Universal */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* Universal */
-
-/* Variables */
-:root
+@media (min-width: 768px)
 {
-    --mainColor: #B0E0E6;
-    --accentColor: #F0F8FF;
-    --backColor: #e2f3f2c4;
-
-    --titleFont: "Edu NSW ACT Foundation", cursive;
-    --paraFont: "Single Day", cursive;
-    --midContentFont: "Permanent Marker", cursive;
-
-    --shadowSettings: .1em .1em .5em .2em black;
-}
-/* Variables */
-
-@media only screen and (max-width: 768px) 
-{
-    /* Header */
+     /* Header */
     /* Please use elements in order*/
+    header
+    {
+        height: max-content;
+    }
     .main-heading 
     {
         display: grid;
@@ -49,7 +23,7 @@
     }
     .logo img
     {
-        width: 60%;
+        width: max-content;
         filter: contrast(200%);
     }
     .heading
@@ -59,18 +33,26 @@
     }
     .heading h1
     {
-        font-size: 110%;
+        font-size: 2em;
         font-family: var(--titleFont);
     }
     .socials
     {
         grid-column: 3/3;
         grid-row: 1/2;
-        display: flex;
-        flex-wrap: nowrap;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .socials a
+    {
+        width: max-content;
     }
     .socials img{
-        width: 60%;
+        width: 90%;
+    }
+    .socials a:hover
+    {
+        filter: contrast(150%);
     }
     .menu-button
     {
@@ -84,6 +66,7 @@
         font-size: xx-large;
         border-radius: 0;
         background-color: var(--accentColor);
+        display: none;
     }
     /* Header */
 
@@ -91,7 +74,8 @@
     /* Please use elements in order*/
     #navbar
     {
-        display: none;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
     }
     nav
     {
@@ -122,8 +106,13 @@
 
     /* Main */
     /* Please use elements in order*/
+    main
+    {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: max-content max-content max-content;
+    }
     
-    /* Main */
     .about
     {
         margin: 3% 2%;
@@ -131,6 +120,8 @@
         margin-top: 5%;
         background-color: var(--mainColor);
         box-shadow: var(--shadowSettings);
+        grid-column: 1/3;
+        grid-row: 1/4;
     }
     .about > .about-title
     {
@@ -157,6 +148,7 @@
         justify-items: center;
         margin: 3% 2%;
         box-shadow: var(--shadowSettings);
+        
     }
     
     .hero-image > img
@@ -165,12 +157,14 @@
         grid-row: 1/4;
         max-width: 100%;
         width: 100%;
+        height: 100%;
     }
     .hero-image > h1
     {
         grid-column: 1/4;
         grid-row: 1/2;
         font-family: var(--midContentFont);
+        text-align: center;
     }
     .hero-image > a
     {
@@ -208,8 +202,10 @@
     {
         max-width: 100%;
         width: 100%;
+        height: 100%;
         grid-column: 1/4;
         grid-row: 1/4;
+    
     }
     .drink-counter > p
     {
@@ -217,23 +213,26 @@
         grid-row: 1;
         font-family: var(--midContentFont);
         font-size: large;
+        text-align: center;
     }
     
     .weather-box
     {
         margin: 3% 2%;
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, max-content);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content 1fr;
         border: 1px solid;
         background-color: var(--mainColor);
         box-shadow: var(--shadowSettings);
         font-family: var(--midContentFont);
+        grid-column: 1/3;
     }
     .weather-title
     {
         text-align: center;
         margin: 2% 0;
+        grid-column: 1/3;
     }
     .current-weather
     {
@@ -243,6 +242,7 @@
         border: 1px solid;
         margin: 1% 2%;
         background-color: var(--accentColor);
+        height: max-content;
     }
     .weathers
     {
@@ -254,6 +254,7 @@
         margin-bottom: 3%;
         
     }
+    /* Main */
     
     /* Footer */
     /* Please use elements in order*/
@@ -265,6 +266,8 @@
     .company-content
     {
         text-align: center;
+        display: flex;
+        justify-content: space-around;
     }
     .company-content h3,a,p
     {
@@ -285,6 +288,8 @@
         text-align: center;
         border-top: 1px dotted;
         margin: 1% 0;
+        display: flex;
+        justify-content: space-evenly;
 
     }
     .copyright-content p
