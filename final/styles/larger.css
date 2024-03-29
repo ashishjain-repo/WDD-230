@@ -106,7 +106,7 @@
 
     /* Main */
     /* Please use elements in order*/
-    main
+    .main
     {
         display: grid;
         grid-template-columns: 50% 50%;

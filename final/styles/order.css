@@ -1,0 +1,69 @@
+/* Phone */
+@media only screen and (max-width: 768px) 
+{
+    #juiceForm
+    {
+        display: grid;
+        justify-items: center;
+    }
+    .user-info
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        width: 90%;
+        margin: 2% 0;
+        background-color: var(--mainColor);
+    }
+    .user-info legend
+    {
+        
+    }
+    .user-info label
+    {
+        margin: 1% 0;
+        text-align: center;
+    }
+    .user-info input
+    {
+        width: 60%;
+        text-align: center;
+        height: 100%;
+    }
+    .user-info-input
+    {
+        margin: 4% 0;
+    }
+    .user-order
+    {
+        display: grid;
+        width: 90%;
+        justify-items: center;
+        margin: 2% 0;
+    }
+    .user-order span,select
+    {
+        margin: 1% 0;
+        text-align: center;   
+    }
+    .user-order select
+    {
+        width: 80%;
+        text-align: center;
+        margin: 2% 0;
+    }
+    .user-order textarea
+    {
+        width: 80%;
+    }
+    #buildDrink
+    {
+        margin: 2% 0;
+    }
+}
+
+/* Tablet and Big Screen */
+@media (min-width: 768px)
+{
+
+}
