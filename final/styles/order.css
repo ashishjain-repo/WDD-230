@@ -5,6 +5,7 @@
     {
         display: grid;
         justify-items: center;
+        
     }
     .user-info
     {
@@ -14,15 +15,24 @@
         width: 90%;
         margin: 2% 0;
         background-color: var(--mainColor);
+        box-shadow: var(--shadowSettings);
     }
     .user-info legend
     {
-        
+        border: 1px solid;
+        padding: 1% 2%;
+        background-color: var(--accentColor);
+        border-radius: 100%;
     }
     .user-info label
     {
         margin: 1% 0;
         text-align: center;
+        border: 1px solid;
+        border-radius: .5em .5em 0 0;
+        padding: 0 1%;
+        background-color: var(--accentColor);
+        font-weight: 900;
     }
     .user-info input
     {
@@ -40,6 +50,15 @@
         width: 90%;
         justify-items: center;
         margin: 2% 0;
+        background-color: var(--mainColor);
+        box-shadow: var(--shadowSettings);
+    }
+    .user-order legend
+    {
+        border: 1px solid;
+        padding: 1% 2%;
+        background-color: var(--accentColor);
+        border-radius: 100%;
     }
     .user-order span,select
     {
@@ -56,9 +75,21 @@
     {
         width: 80%;
     }
+    .user-order span
+    {
+        border: 1px solid;
+        border-radius: .5em .5em 0 0;
+        padding: 0 1%;
+        background-color: var(--accentColor);
+        font-weight: 900;
+    }
     #buildDrink
     {
         margin: 2% 0;
+        width: 50%;
+        padding: 2% 0;
+        border-radius: 100%;
+        box-shadow: var(--shadowSettings);
     }
 }
 
