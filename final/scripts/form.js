@@ -1,3 +1,5 @@
+
+
 const queryString = window.location.search;
 
 // Parse the query string into an object
@@ -7,3 +9,4 @@ const urlParams = new URLSearchParams(queryString);
 urlParams.forEach((value, key) => {
     console.log(`${key}: ${value}`);
 });
+console.log(returnFruits)

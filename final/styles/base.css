@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 /* Google Fonts */
 
 /* Universal */
@@ -23,6 +24,7 @@
     --titleFont: "Edu NSW ACT Foundation", cursive;
     --paraFont: "Single Day", cursive;
     --midContentFont: "Permanent Marker", cursive;
+    --otherFont: "Dancing Script", cursive;
 
     --shadowSettings: .1em .1em .5em .2em black;
 }
