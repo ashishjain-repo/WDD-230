@@ -14,7 +14,10 @@ label, .user-order span
     font-weight: 900;
     padding: 2% 2%;
 }
-
+.info
+{
+    font-family: var(--otherFont);
+}
 
 /* Phone */
 @media only screen and (max-width: 768px) 
