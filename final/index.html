@@ -27,6 +27,7 @@
     <script src="./scripts/weather.js"></script>
     <script src="./scripts/hourly.js"></script>
     <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/counter.js" defer></script>
     <!-- Javascript Only-->
 
     <title>Bountiful Foods | [Home]</title>
@@ -81,7 +82,7 @@
         </div>
         <div class="drink-counter">
             <img src="./images/counter.webp" alt="">
-            <p>You didn't build any drink yet!<span class="drink-counts"></span></p>
+            <p id="drink-para">You didn't build any drink yet!</p>
         </div>
         <div class="weather-box">
             <div class="weather-title">
@@ -132,7 +133,7 @@
             <p>Last Modified: <span id="last-modified"></span></p>
         </div>
         <div class="disclaimer">
-            <p>This website is owned and maintained for educational purposes. The content provided here is intended for use in school projects, research, and educational endeavors.</p>
+            <p>Build using data from <a href="https://openweathermap.org/">OpenWeather</a> and <a href="http://www.fruityvice.com/">FruityVice</a></p>
         </div>
     </footer>
 </body>

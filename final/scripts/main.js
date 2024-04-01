@@ -9,3 +9,4 @@ function toggleMenu() {
 document.getElementById('last-modified').textContent = document.lastModified;
 
 document.getElementById('current-year').textContent = new Date().getFullYear();
+
