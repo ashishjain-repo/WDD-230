@@ -15,9 +15,17 @@ async function getFruits(ing1, ing2, ing3, choiceList, nutrition) {
             const sugar = data[choiceList[0]].nutritions.sugar + data[choiceList[1]].nutritions.sugar + data[choiceList[2]].nutritions.sugar;
             const values = [carbohydrates, protein, fat, calorie, sugar];
             for(i = 0; i < nutrition.length; i++)
-            {
+            {   
+
                 var temp = document.getElementById(nutrition[i]);
-                temp.innerText = values[i].toFixed(1) + " Grams"
+                if(temp === "cal")
+                {
+                    temp.innerText = values[i].toFixed(1);
+                }
+                else
+                {
+                    temp.innerText = values[i].toFixed(1) + " Grams"
+                }
             }
         } else {
             throw Error(await response.text());
@@ -69,3 +77,17 @@ let visitCount = localStorage.getItem('visitCount');
 
         // Store the updated value back into localStorage
         localStorage.setItem('visitCount', visitCount);
+
+
+const currentTime = new Date();
+
+const fifteenMinutesLater = new Date(currentTime.getTime() + 15 * 60000); // 60000 milliseconds in a minute
+const formattedTime = fifteenMinutesLater.toLocaleTimeString(); // Format time as string
+const timeDisplay = document.getElementById('order-time');
+timeDisplay.innerText = formattedTime;
+
+const formattedDate = currentTime.toLocaleDateString();
+const dateDisplay = document.getElementById('return-date');
+dateDisplay.innerText = formattedDate;
+
+

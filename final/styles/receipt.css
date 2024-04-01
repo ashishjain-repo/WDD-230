@@ -1,7 +1,77 @@
-@media only screen and (max-width: 768px) 
-{
+/* @media only screen and (max-width: 768px) 
+{ */
     .receipt-main
     {
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: repeat(3, max-content);
+        justify-items: center;
         
     }
-}
+    .thank
+    {
+        grid-column: 2;
+        border: 1px solid;
+        width: 100%;
+        margin: 3% 0;
+        text-align: center;
+        box-shadow: var(--shadowSettings);
+        background-color: var(--mainColor);
+    }
+    .thank h3
+    {
+        font-family: var(--titleFont);
+    }
+    .thank p
+    {
+        font-family: var(--midContentFont);
+    }
+    .thank h3,p
+    {
+        margin: 3% 0;
+    }
+    .order-details
+    {
+        grid-column: 2;
+        border: 1px solid;
+        width: 100%;
+        margin: 3% 0;
+        text-align: center;
+        box-shadow: var(--shadowSettings);
+        background-color: var(--mainColor);
+    }
+    .nutrition-info
+    {
+        grid-column: 2;
+        margin: 3% 0;
+        width: 100%;
+        box-shadow: var(--shadowSettings);
+        background-color: var(--mainColor);
+    }
+    .nutrition-info table
+    {
+        border: 1px solid;
+        text-align: center;
+        width: 100%;
+    }
+    .nutrition-info table tr th
+    {
+        font-family: var(--titleFont);
+    }
+    .nutrition-info table th,td
+    {
+        padding: 1% 0;
+    }
+    .nutrition-info table th
+    {
+        background-color: var(--backColor);
+    }
+    .nutrition-info table td
+    {
+        font-family: var(--paraFont);
+    }
+    span, #cust-name
+    {
+        font-family: var(--otherFont);
+    }
+/* } */

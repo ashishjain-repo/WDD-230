@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/receipt.css">
     <!-- CSS Only-->
 
     <!-- Javascript Only-->
@@ -71,18 +72,20 @@
 </div>
 <div class="order-details">
     <div>
-        <p><b>Name: </b><span id="return-name"></span></p>
-        <p><b>Email: </b><span id="return-email"></span></p>
-        <p><b>Phone: </b><span id="return-phone"></span></p>
+        <p><b>Name: </b><span id="return-name">Name</span></p>
+        <p><b>Email: </b><span id="return-email">Email</span></p>
+        <p><b>Phone: </b><span id="return-phone">Phone</span></p>
+        <p><b>Ordered On: </b><span id="return-date">00-00-00 00</span></p>
+        <p><b>Your order will be ready by: </b><span id="order-time"></span></p>
     </div>
     <div>
         <p>Instructions: <span id="instruction"></span></p>
-        <p><span id="ing-1"></span> | <span id="ing-2"></span> | <span id="ing-3"></span></p>
+        <p><span id="ing-1">Fruit 1</span> | <span id="ing-2">Fruit 2</span> | <span id="ing-3">Fruit 3</span></p>
     </div>
 
 </div>
 <div class="nutrition-info">
-    <table>
+    <table border="1">
         <tr>
             <th>Nutrient</th>
             <th>Amount</th>
