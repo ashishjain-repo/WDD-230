@@ -21,11 +21,12 @@
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/about.css">
     <!-- CSS Only-->
 
     <!-- Javascript Only-->
-    <script src="./scripts/weather.js"></script>
-    <script src="./scripts/hourly.js"></script>
+    <!-- <script src="./scripts/weather.js"></script>
+    <script src="./scripts/hourly.js"></script> -->
     <script src="./scripts/main.js" defer></script>
     <!-- Javascript Only-->
 
@@ -63,8 +64,35 @@
             <li><a href="./about.html">About Us</a></li>
         </ul>
     </nav>
-    <main>
-
+    <main class="about-main">
+        <div class="banner">
+            <img src="./images/about.webp" alt="hero">
+            <p>About Us</p>
+        </div>
+        <div class="information">
+            <h3>Who are we?</h3>
+            <div>
+                <p>We are a small business specialized in <b>organic</b>, <b>locally grown foods</b>. As you noticed, we
+                    are located in <b>Carlsbad, CA</b>, but you will find many of our food trucks all over the coastal
+                    area from Los Angeles to San Diego.</p>
+            </div>
+            <div>
+                <p>We are happy to provide you <b>fresh</b> and <b>healthy</b> food options, including organic, made to
+                    order, fruit drinks and fruit bags!</p>
+            </div>
+        </div>
+        <div class="contact">
+            <h3>Get in contact with us!</h3>
+            <p><b>Office hours: </b>Mo. to Fri. 8 A.M. - 4 P.M.</p>
+            <p><b>Phone: </b>(123) 456-7890</p>
+            <p><b>Email: </b>contact@bountifulfoods.com</p>
+        </div>
+        <div class="google-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106928.89382638312!2d-117.37020316991637!3d33.121492433734346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA!5e0!3m2!1sen!2sus!4v1711939368635!5m2!1sen!2sus"
+                height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                class="map"></iframe>
+        </div>
     </main>
     <footer>
         <div class="company-content">
@@ -79,7 +107,8 @@
             <p>Last Modified: <span id="last-modified"></span></p>
         </div>
         <div class="disclaimer">
-            <p>This website is owned and maintained for educational purposes. The content provided here is intended for use in school projects, research, and educational endeavors.</p>
+            <p>This website is owned and maintained for educational purposes. The content provided here is intended for
+                use in school projects, research, and educational endeavors.</p>
         </div>
     </footer>
 </body>

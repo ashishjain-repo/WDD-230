@@ -1,0 +1,113 @@
+/* About Universal */
+.banner
+{
+    box-shadow: var(--shadowSettings);
+}
+.information
+{
+    background-color: var(--mainColor);
+    box-shadow: var(--shadowSettings);
+}
+.information div
+{
+    background-color: var(--accentColor);
+}
+.contact
+{
+    background-color: var(--mainColor);
+    box-shadow: var(--shadowSettings);
+}
+.contact p
+{
+    background-color: var(--accentColor);
+}
+
+/* Phone */
+@media only screen and (max-width: 768px) 
+{
+    .about-main
+    {
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: repeat(4, max-content);
+    }
+    .banner
+    {
+        grid-column: 2/3;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        text-align: center;
+        margin: 3% 0;
+
+    }
+    .banner img
+    {
+        max-width: 100%;
+        width: 100%;
+        grid-column: 1/4;
+        grid-row: 1/4;
+    }
+    .banner p
+    {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .information
+    {
+        grid-column: 2/3;
+        grid-row: 2;
+        display: grid;
+        justify-items: center;
+        border: 1px solid;
+        padding: 2% 0;
+        margin: 3% 0;
+
+    }
+    .information div
+    {
+        text-align: center;
+        border: 1px solid;
+        margin: 1% 2%;
+        padding: 0 2%;
+    }
+
+    .contact
+    {
+        grid-column: 2/3;
+        grid-row: 3;
+        margin: 3% 0;
+        display: grid;
+        border: 1px solid;
+        margin: 3% 0;
+        padding: 2% 0;
+        justify-items: center;
+        
+    }
+    .contact h3
+    {
+        text-align: center;
+        padding: 2% 0;
+    }
+    .contact p
+    {
+        display: block;
+        border: 1px solid;
+        padding: 2% 0;
+        width: 80%;
+        text-align: center;
+    }
+    .google-map
+    {
+        grid-column: 2/3;
+        grid-row: 4;
+    }
+}
+
+/* Tablet and Big Screen */
+@media (min-width: 768px)
+{
+
+}
