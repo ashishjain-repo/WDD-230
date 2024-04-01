@@ -48,9 +48,12 @@
         box-shadow: var(--shadowSettings);
         background-color: var(--mainColor);
     }
-    .nutrition-info table
+    table tr td, th
     {
         border: 1px solid;
+    }
+    .nutrition-info table
+    {
         text-align: center;
         width: 100%;
     }
