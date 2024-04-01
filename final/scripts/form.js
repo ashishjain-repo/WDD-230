@@ -14,18 +14,10 @@ async function getFruits(ing1, ing2, ing3, choiceList, nutrition) {
             const calorie = data[choiceList[0]].nutritions.calories + data[choiceList[1]].nutritions.calories + data[choiceList[2]].nutritions.calories;
             const sugar = data[choiceList[0]].nutritions.sugar + data[choiceList[1]].nutritions.sugar + data[choiceList[2]].nutritions.sugar;
             const values = [carbohydrates, protein, fat, calorie, sugar];
-            for(i = 0; i < nutrition.length; i++)
-            {   
+            for (i = 0; i < nutrition.length; i++) {
 
                 var temp = document.getElementById(nutrition[i]);
-                if(temp === "cal")
-                {
-                    temp.innerText = values[i].toFixed(1);
-                }
-                else
-                {
-                    temp.innerText = values[i].toFixed(1) + " Grams"
-                }
+                temp.innerText = values[i].toFixed(1) + " Grams"
             }
         } else {
             throw Error(await response.text());
@@ -49,13 +41,12 @@ justName.innerText = name;
 
 // console.log(urlParams)
 
-const changeList = ['return-name','return-email','return-phone','instruction'];
+const changeList = ['return-name', 'return-email', 'return-phone', 'instruction'];
 const valueList = [name, email, phone, desc];
 const choices = [parseInt(choice1), parseInt(choice2), parseInt(choice3)];
-const nutrition = ['carb','pro','fat','cal','sug'];
+const nutrition = ['carb', 'pro', 'fat', 'cal', 'sug'];
 
-for(i = 0; i < changeList.length; i++)
-{
+for (i = 0; i < changeList.length; i++) {
     var temp = document.getElementById(changeList[i])
     temp.innerText = valueList[i];
 }
@@ -67,16 +58,16 @@ getFruits(ing_1, ing_2, ing_3, choices, nutrition);
 // console.log(choices)
 let visitCount = localStorage.getItem('visitCount');
 
-        // If the value is not present or is null, set it to 1
-        if (!visitCount) {
-            visitCount = 1;
-        } else {
-            // Otherwise, parse the value as an integer and increment it
-            visitCount = parseInt(visitCount) + 1;
-        }
+// If the value is not present or is null, set it to 1
+if (!visitCount) {
+    visitCount = 1;
+} else {
+    // Otherwise, parse the value as an integer and increment it
+    visitCount = parseInt(visitCount) + 1;
+}
 
-        // Store the updated value back into localStorage
-        localStorage.setItem('visitCount', visitCount);
+// Store the updated value back into localStorage
+localStorage.setItem('visitCount', visitCount);
 
 
 const currentTime = new Date();
