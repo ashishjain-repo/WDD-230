@@ -31,7 +31,6 @@ async function getFruits() {
     }
 }
 
-export const returnFruit = [];
 getFruits()
     .then((element) => {
         returnFruit.push(element);
