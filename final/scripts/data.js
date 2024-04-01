@@ -22,7 +22,6 @@ async function getFruits() {
                     selectElement.appendChild(option);
                 });
             });
-            return returnFruits;
         } else {
             throw Error(await response.text());
         }
@@ -31,10 +30,4 @@ async function getFruits() {
     }
 }
 
-getFruits()
-    .then((element) => {
-        returnFruit.push(element);
-    })
-    .catch((error) => {
-        console.error(error);
-    });
+getFruits();
