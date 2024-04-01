@@ -3,6 +3,13 @@
 {
     box-shadow: var(--shadowSettings);
 }
+.banner p
+{
+    font-family: var(--titleFont);
+    border: 1px solid var(--accentColor);
+    box-shadow: var(--shadowSettings);
+    
+}
 .information
 {
     background-color: var(--mainColor);
@@ -12,14 +19,27 @@
 {
     background-color: var(--accentColor);
 }
+.information div p
+{
+    font-family: var(--paraFont);
+}
+.information h3
+{
+    font-family: var(--titleFont);
+}
 .contact
 {
     background-color: var(--mainColor);
     box-shadow: var(--shadowSettings);
 }
+.contact h3
+{
+    font-family: var(--titleFont);
+}
 .contact p
 {
     background-color: var(--accentColor);
+    font-family: var(--paraFont);
 }
 
 /* Phone */
@@ -54,7 +74,7 @@
     {
         grid-column: 2;
         grid-row: 2;
-        border: 1px solid;
+        
         padding: 15% 0;
         background-color: var(--mainColor);
         font-size: large;
@@ -70,7 +90,6 @@
         border: 1px solid;
         padding: 2% 0;
         margin: 3% 0;
-
     }
     .information div
     {
