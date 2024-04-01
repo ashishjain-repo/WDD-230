@@ -54,6 +54,12 @@
     {
         grid-column: 2;
         grid-row: 2;
+        border: 1px solid;
+        padding: 15% 0;
+        background-color: var(--mainColor);
+        font-size: large;
+        font-weight: 900;
+
     }
     .information
     {
@@ -103,6 +109,13 @@
     {
         grid-column: 2/3;
         grid-row: 4;
+    }
+    .google-map iframe
+    {
+        max-width: 100%;
+        width: 100%;
+        margin: 3% 0;
+        box-shadow: var(--shadowSettings);
     }
 }
 
