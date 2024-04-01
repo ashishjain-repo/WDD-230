@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Ashish Jain">
+    <meta name="description" content="Welcome to the Bountiful Fruits">
+
+    <meta property="og:title" content="This is an unofficial website for Bountiful Fruits">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ashishjain-repo.github.io/wdd230/chamber/images/logo.webp">
+    <meta property="og:url" content="ashishjain-repo.github.io/wdd230">
+
+    <!-- Favicon Only -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- Favicon Only -->
+
+    <!-- CSS Only -->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <!-- CSS Only-->
+
+    <!-- Javascript Only-->
+    <script src="./scripts/weather.js"></script>
+    <script src="./scripts/hourly.js"></script>
+    <script src="./scripts/main.js" defer></script>
+    <!-- Javascript Only-->
+
+    <title>Bountiful Foods | [Home]</title>
+</head>
+
+<body>
+    <header>
+        <div class="main-heading">
+            <div class="logo">
+                <a href="https://ashishjain-repo.github.io/wdd230/final/" target="_blank"><img
+                        src="./images/main-icon.png" alt="Main-logo"></a>
+            </div>
+            <div class="heading">
+                <h1>Bountiful Foods</h1>
+            </div>
+            <div class="socials">
+                <a href=""><img src="./images/social/facebook.webp" alt="Facebook"></a>
+                <a href=""><img src="./images/social/instagram.webp" alt="Instagram"></a>
+                <a href=""><img src="./images/social/twitterx.webp" alt="TwitterX"></a>
+            </div>
+            <div class="menu-button">
+                <button onclick="toggleMenu()" id="menu">☰</button>
+            </div>
+        </div>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+        </ul>
+        <ul>
+            <li><a href="./order.html">Order</a></li>
+        </ul>
+        <ul>
+            <li><a href="./about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <main>
+
+    </main>
+    <footer>
+        <div class="company-content">
+            <h3>Bountiful Foods</h3>
+            <a href="https://maps.app.goo.gl/FFZx43NGhWgqDQR29" target="_blank">Our Address</a>
+            <p>contact@bountifulfoods.com</p>
+            <p>(123) 465-7890</p>
+        </div>
+        <div class="copyright-content">
+            <p>&copy; <span id="current-year"></span> Bountiful Foods</p>
+            <p>Ashish Jain</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+        <div class="disclaimer">
+            <p>This website is owned and maintained for educational purposes. The content provided here is intended for use in school projects, research, and educational endeavors.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
