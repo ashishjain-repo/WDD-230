@@ -8,7 +8,7 @@
     font-family: var(--titleFont);
     border: 1px solid var(--accentColor);
     box-shadow: var(--shadowSettings);
-    
+
 }
 .information
 {
@@ -145,7 +145,7 @@
     {
         display: grid;
         grid-template-columns: 5% 45% 45% 5%;
-        grid-template-rows: 80vh repeat(2, max-content);
+        grid-template-rows: 50vh repeat(2, max-content);
     }
     .banner
     {
@@ -167,16 +167,17 @@
         grid-column: 1/4;
         grid-row: 1/4;
         height: 100%;
+        object-fit: cover;
     }
     .banner p
     {
         grid-column: 2;
         grid-row: 2;
-        
-        padding: 15% 0;
+        padding: 10% 0;
         background-color: var(--mainColor);
         font-size: large;
         font-weight: 900;
+        font-size: 3em;
 
     }
     .information
@@ -227,13 +228,13 @@
         grid-column: 3/4;
         grid-row: 2/4;
         text-align: center;
+        margin: 3% 0;
     }
     .google-map iframe
     {
         max-width: 100%;
         width: 80%;
-        margin: 3% 0;
         box-shadow: var(--shadowSettings);
-        height: 90%;
+        height: 100%;
     }
 }
