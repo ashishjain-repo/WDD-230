@@ -11,7 +11,10 @@
     margin: 0;
     padding: 0;
 }
-
+.disclaimer a
+{
+    color: #aa0e0e;
+}
 /* Universal */
 
 /* Variables */
