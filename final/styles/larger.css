@@ -301,6 +301,7 @@
         border-top: 1px solid;
         font-size: 50%;
         text-align: center;
+        height: min-content;
     }
     /* Footer */
 }

@@ -77,4 +77,18 @@
     {
         font-family: var(--otherFont);
     }
+    @media (min-width: 768px)
+    {
+        .company-content
+        {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: -2% 0;
+        }
+        .disclaimer p
+        {
+            margin: 1% 0;
+        }
+    }
 /* } */
