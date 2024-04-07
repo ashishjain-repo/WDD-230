@@ -24,7 +24,7 @@ async function getHourlyWeather()
         if(response.ok)
         {
             const data = await response.json();
-            console.log(data)
+            // console.log(data)
             const iconCode1 = data.list[3].weather[0].icon;
             const iconCode1Url = `http://openweathermap.org/img/wn/${iconCode1}.png`;
 
